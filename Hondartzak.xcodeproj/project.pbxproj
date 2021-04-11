@@ -58,13 +58,45 @@
 			children = (
 				422C002A26235AB9008E9A18 /* AppDelegate.swift */,
 				422C002C26235AB9008E9A18 /* SceneDelegate.swift */,
+				42B71F6B262363ED000B985B /* Models */,
+				42B71F6D262363FA000B985B /* ViewModels */,
+				42B71F6C262363F3000B985B /* Views */,
+				42B71F6E2623642D000B985B /* Controllers */,
 				422C003326235ABA008E9A18 /* Assets.xcassets */,
 				422C003526235ABA008E9A18 /* LaunchScreen.storyboard */,
 				422C003826235ABA008E9A18 /* Info.plist */,
-				42B71F6526235F54000B985B /* MainViewController.swift */,
-				42B71F6626235F54000B985B /* MainViewController.xib */,
 			);
 			path = Hondartzak;
+			sourceTree = "<group>";
+		};
+		42B71F6B262363ED000B985B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		42B71F6C262363F3000B985B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42B71F6626235F54000B985B /* MainViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		42B71F6D262363FA000B985B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		42B71F6E2623642D000B985B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				42B71F6526235F54000B985B /* MainViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
