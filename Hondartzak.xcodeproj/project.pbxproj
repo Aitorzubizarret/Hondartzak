@@ -15,6 +15,8 @@
 		42B71F6826235F54000B985B /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42B71F6626235F54000B985B /* MainViewController.xib */; };
 		42F579D0262377E30072EA67 /* Beach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F579CF262377E30072EA67 /* Beach.swift */; };
 		42F579D3262378320072EA67 /* BeachesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F579D2262378320072EA67 /* BeachesViewModel.swift */; };
+		42F579D72623826C0072EA67 /* Beaches.json in Resources */ = {isa = PBXBuildFile; fileRef = 42F579D62623826C0072EA67 /* Beaches.json */; };
+		42F579DB262382D20072EA67 /* JSONReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F579DA262382D20072EA67 /* JSONReader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		42B71F6626235F54000B985B /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		42F579CF262377E30072EA67 /* Beach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beach.swift; sourceTree = "<group>"; };
 		42F579D2262378320072EA67 /* BeachesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachesViewModel.swift; sourceTree = "<group>"; };
+		42F579D62623826C0072EA67 /* Beaches.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Beaches.json; sourceTree = "<group>"; };
+		42F579DA262382D20072EA67 /* JSONReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONReader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 				422C002A26235AB9008E9A18 /* AppDelegate.swift */,
 				422C002C26235AB9008E9A18 /* SceneDelegate.swift */,
 				42B71F6B262363ED000B985B /* Models */,
+				42F579D5262382510072EA67 /* LocalData */,
 				42B71F6D262363FA000B985B /* ViewModels */,
 				42B71F6C262363F3000B985B /* Views */,
 				42B71F6E2623642D000B985B /* Controllers */,
@@ -103,6 +108,15 @@
 				42B71F6526235F54000B985B /* MainViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		42F579D5262382510072EA67 /* LocalData */ = {
+			isa = PBXGroup;
+			children = (
+				42F579DA262382D20072EA67 /* JSONReader.swift */,
+				42F579D62623826C0072EA67 /* Beaches.json */,
+			);
+			path = LocalData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +179,7 @@
 				422C003726235ABA008E9A18 /* LaunchScreen.storyboard in Resources */,
 				42B71F6826235F54000B985B /* MainViewController.xib in Resources */,
 				422C003426235ABA008E9A18 /* Assets.xcassets in Resources */,
+				42F579D72623826C0072EA67 /* Beaches.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +194,7 @@
 				42F579D3262378320072EA67 /* BeachesViewModel.swift in Sources */,
 				42F579D0262377E30072EA67 /* Beach.swift in Sources */,
 				422C002D26235AB9008E9A18 /* SceneDelegate.swift in Sources */,
+				42F579DB262382D20072EA67 /* JSONReader.swift in Sources */,
 				42B71F6726235F54000B985B /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

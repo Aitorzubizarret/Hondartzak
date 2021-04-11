@@ -24,9 +24,12 @@ class BeachesViewModel {
     // MARK: - Methods
     
     public func getLocalData() {
-        let beach1: Beach = Beach(name: "Zurriola")
-        var list: [Beach] = []
-        list.append(beach1)
-        self.beachesList = list
+        jsonReader(filename: "Beaches") { (success, data: [Beach]?) in
+            DispatchQueue.main.async {
+                if success, let receivedData = data {
+                    self.beachesList = receivedData
+                }
+            }
+        }
     }
 }

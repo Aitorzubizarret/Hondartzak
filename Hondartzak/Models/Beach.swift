@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Beach {
-    let id: UUID = UUID()
+struct Beach: Codable {
+    let id: Int
     let name: String
 }
