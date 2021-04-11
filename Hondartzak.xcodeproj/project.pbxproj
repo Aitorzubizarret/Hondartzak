@@ -13,6 +13,8 @@
 		422C003726235ABA008E9A18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 422C003526235ABA008E9A18 /* LaunchScreen.storyboard */; };
 		42B71F6726235F54000B985B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B71F6526235F54000B985B /* MainViewController.swift */; };
 		42B71F6826235F54000B985B /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42B71F6626235F54000B985B /* MainViewController.xib */; };
+		42F579D0262377E30072EA67 /* Beach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F579CF262377E30072EA67 /* Beach.swift */; };
+		42F579D3262378320072EA67 /* BeachesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F579D2262378320072EA67 /* BeachesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		422C003826235ABA008E9A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42B71F6526235F54000B985B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		42B71F6626235F54000B985B /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		42F579CF262377E30072EA67 /* Beach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beach.swift; sourceTree = "<group>"; };
+		42F579D2262378320072EA67 /* BeachesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 		42B71F6B262363ED000B985B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				42F579CF262377E30072EA67 /* Beach.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -87,6 +92,7 @@
 		42B71F6D262363FA000B985B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				42F579D2262378320072EA67 /* BeachesViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -170,6 +176,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				422C002B26235AB9008E9A18 /* AppDelegate.swift in Sources */,
+				42F579D3262378320072EA67 /* BeachesViewModel.swift in Sources */,
+				42F579D0262377E30072EA67 /* Beach.swift in Sources */,
 				422C002D26235AB9008E9A18 /* SceneDelegate.swift in Sources */,
 				42B71F6726235F54000B985B /* MainViewController.swift in Sources */,
 			);

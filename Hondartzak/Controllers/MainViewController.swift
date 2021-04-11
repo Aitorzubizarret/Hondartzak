@@ -15,12 +15,23 @@ class MainViewController: UIViewController {
     
     // MARK: - Properties
     
+    var beachesViewModel: BeachesViewModel = BeachesViewModel()
+    var beachesList: [Beach] = [] {
+        didSet {
+            self.tableView.reloadData()
+        }
+    }
+    
     // MARK: - Methods
     
     override func viewDidLoad() {
+        print("MainViewController viewDidLoad")
         super.viewDidLoad()
         
         self.setupTableView()
+        self.bind()
+        
+        self.beachesViewModel.getLocalData()
     }
     
     ///
@@ -31,6 +42,16 @@ class MainViewController: UIViewController {
         self.tableView.dataSource = self
     }
     
+    ///
+    /// Get new data from BeachesViewModel.
+    ///
+    private func bind() {
+        self.beachesViewModel.binding = {
+            if let beachesList = self.beachesViewModel.beachesList {
+                self.beachesList = beachesList
+            }
+        }
+    }
 }
 
 // MARK: - UITableView Delegate
@@ -46,12 +67,12 @@ extension MainViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return self.beachesList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = UITableViewCell()
-        cell.textLabel?.text = "Hello World"
+        cell.textLabel?.text = self.beachesList[indexPath.row].name
         return cell
     }
     
