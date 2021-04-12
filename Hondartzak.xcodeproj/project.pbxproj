@@ -26,6 +26,7 @@
 		422C003326235ABA008E9A18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		422C003626235ABA008E9A18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		422C003826235ABA008E9A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4242C7D82624F3990076599C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		42B71F6526235F54000B985B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		42B71F6626235F54000B985B /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		42F579CF262377E30072EA67 /* Beach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beach.swift; sourceTree = "<group>"; };
@@ -48,6 +49,7 @@
 		422C001E26235AB9008E9A18 = {
 			isa = PBXGroup;
 			children = (
+				4242C7D82624F3990076599C /* README.md */,
 				422C002926235AB9008E9A18 /* Hondartzak */,
 				422C002826235AB9008E9A18 /* Products */,
 			);
