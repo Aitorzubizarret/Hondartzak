@@ -56,7 +56,14 @@ class MainViewController: UIViewController {
 
 // MARK: - UITableView Delegate
 
-extension MainViewController: UITableViewDelegate {}
+extension MainViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let beachDetailVC: BeachDetailViewController = BeachDetailViewController()
+        self.navigationController?.pushViewController(beachDetailVC, animated: true)
+    }
+    
+}
 
 // MARK: - UITableView Data Source
 

@@ -11,6 +11,8 @@
 		422C002D26235AB9008E9A18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422C002C26235AB9008E9A18 /* SceneDelegate.swift */; };
 		422C003426235ABA008E9A18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 422C003326235ABA008E9A18 /* Assets.xcassets */; };
 		422C003726235ABA008E9A18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 422C003526235ABA008E9A18 /* LaunchScreen.storyboard */; };
+		42942051262643E60064547C /* BeachDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4294204F262643E60064547C /* BeachDetailViewController.swift */; };
+		42942052262643E60064547C /* BeachDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42942050262643E60064547C /* BeachDetailViewController.xib */; };
 		42B71F6726235F54000B985B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B71F6526235F54000B985B /* MainViewController.swift */; };
 		42B71F6826235F54000B985B /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42B71F6626235F54000B985B /* MainViewController.xib */; };
 		42F579D0262377E30072EA67 /* Beach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F579CF262377E30072EA67 /* Beach.swift */; };
@@ -27,6 +29,8 @@
 		422C003626235ABA008E9A18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		422C003826235ABA008E9A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4242C7D82624F3990076599C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4294204F262643E60064547C /* BeachDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachDetailViewController.swift; sourceTree = "<group>"; };
+		42942050262643E60064547C /* BeachDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeachDetailViewController.xib; sourceTree = "<group>"; };
 		42B71F6526235F54000B985B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		42B71F6626235F54000B985B /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		42F579CF262377E30072EA67 /* Beach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beach.swift; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				42B71F6626235F54000B985B /* MainViewController.xib */,
+				42942050262643E60064547C /* BeachDetailViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				42B71F6526235F54000B985B /* MainViewController.swift */,
+				4294204F262643E60064547C /* BeachDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -181,6 +187,7 @@
 				422C003726235ABA008E9A18 /* LaunchScreen.storyboard in Resources */,
 				42B71F6826235F54000B985B /* MainViewController.xib in Resources */,
 				422C003426235ABA008E9A18 /* Assets.xcassets in Resources */,
+				42942052262643E60064547C /* BeachDetailViewController.xib in Resources */,
 				42F579D72623826C0072EA67 /* Beaches.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,6 +203,7 @@
 				42F579D3262378320072EA67 /* BeachesViewModel.swift in Sources */,
 				42F579D0262377E30072EA67 /* Beach.swift in Sources */,
 				422C002D26235AB9008E9A18 /* SceneDelegate.swift in Sources */,
+				42942051262643E60064547C /* BeachDetailViewController.swift in Sources */,
 				42F579DB262382D20072EA67 /* JSONReader.swift in Sources */,
 				42B71F6726235F54000B985B /* MainViewController.swift in Sources */,
 			);
