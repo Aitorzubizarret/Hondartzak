@@ -31,7 +31,8 @@ class MainViewController: UIViewController {
         self.setupTableView()
         self.bind()
         
-        self.beachesViewModel.getLocalData()
+        //self.beachesViewModel.getLocalData()
+        self.beachesViewModel.getCloudkitData()
     }
     
     ///

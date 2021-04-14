@@ -13,6 +13,7 @@
 		422C003726235ABA008E9A18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 422C003526235ABA008E9A18 /* LaunchScreen.storyboard */; };
 		42942051262643E60064547C /* BeachDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4294204F262643E60064547C /* BeachDetailViewController.swift */; };
 		42942052262643E60064547C /* BeachDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42942050262643E60064547C /* BeachDetailViewController.xib */; };
+		42942059262648390064547C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42942058262648390064547C /* CloudKit.framework */; };
 		42B71F6726235F54000B985B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B71F6526235F54000B985B /* MainViewController.swift */; };
 		42B71F6826235F54000B985B /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42B71F6626235F54000B985B /* MainViewController.xib */; };
 		42F579D0262377E30072EA67 /* Beach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F579CF262377E30072EA67 /* Beach.swift */; };
@@ -31,6 +32,8 @@
 		4242C7D82624F3990076599C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4294204F262643E60064547C /* BeachDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachDetailViewController.swift; sourceTree = "<group>"; };
 		42942050262643E60064547C /* BeachDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeachDetailViewController.xib; sourceTree = "<group>"; };
+		42942055262648210064547C /* Hondartzak.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hondartzak.entitlements; sourceTree = "<group>"; };
+		42942058262648390064547C /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		42B71F6526235F54000B985B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		42B71F6626235F54000B985B /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		42F579CF262377E30072EA67 /* Beach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beach.swift; sourceTree = "<group>"; };
@@ -44,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42942059262648390064547C /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +60,7 @@
 				4242C7D82624F3990076599C /* README.md */,
 				422C002926235AB9008E9A18 /* Hondartzak */,
 				422C002826235AB9008E9A18 /* Products */,
+				42942057262648390064547C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +75,7 @@
 		422C002926235AB9008E9A18 /* Hondartzak */ = {
 			isa = PBXGroup;
 			children = (
+				42942055262648210064547C /* Hondartzak.entitlements */,
 				422C002A26235AB9008E9A18 /* AppDelegate.swift */,
 				422C002C26235AB9008E9A18 /* SceneDelegate.swift */,
 				42B71F6B262363ED000B985B /* Models */,
@@ -82,6 +88,14 @@
 				422C003826235ABA008E9A18 /* Info.plist */,
 			);
 			path = Hondartzak;
+			sourceTree = "<group>";
+		};
+		42942057262648390064547C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42942058262648390064547C /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		42B71F6B262363ED000B985B /* Models */ = {
@@ -344,6 +358,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Hondartzak/Hondartzak.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V9WUS7ZBGW;
 				INFOPLIST_FILE = Hondartzak/Info.plist;
@@ -364,6 +379,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Hondartzak/Hondartzak.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V9WUS7ZBGW;
 				INFOPLIST_FILE = Hondartzak/Info.plist;

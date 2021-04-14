@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CloudKit
 
 class BeachesViewModel {
     
@@ -21,8 +22,14 @@ class BeachesViewModel {
         }
     }
     
+    // CloudKit Public Database.
+    static let database = CKContainer.default().publicCloudDatabase
+    
     // MARK: - Methods
     
+    ///
+    /// Get Local Data from a local JSON file.
+    ///
     public func getLocalData() {
         jsonReader(filename: "Beaches") { (success, data: [Beach]?) in
             DispatchQueue.main.async {
@@ -32,4 +39,38 @@ class BeachesViewModel {
             }
         }
     }
+    
+    ///
+    /// Get CloudKit Data.
+    ///
+    public func getCloudkitData() {
+        let predicate = NSPredicate(value: true)
+        let query = CKQuery(recordType: "Beach", predicate: predicate)
+        
+        let operation = CKQueryOperation(query: query)
+        operation.desiredKeys = ["name", "web"]
+        operation.resultsLimit = 50
+        
+        var cloudKitBeaches = [Beach]()
+        
+        operation.recordFetchedBlock = { record in
+            let beachName: String = record["name"] as! String
+            let beach = Beach(id: 2, name: beachName)
+            
+            cloudKitBeaches.append(beach)
+        }
+
+        operation.queryCompletionBlock = { (cursor, error) in
+            DispatchQueue.main.async {
+                if let error = error {
+                    print("Error: \(error)")
+                } else {
+                    self.beachesList = cloudKitBeaches
+                }
+            }
+        }
+        
+        BeachesViewModel.database.add(operation)
+    }
+    
 }
