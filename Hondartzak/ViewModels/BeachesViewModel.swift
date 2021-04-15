@@ -55,7 +55,8 @@ class BeachesViewModel {
         
         operation.recordFetchedBlock = { record in
             let beachName: String = record["name"] as! String
-            let beach = Beach(id: 2, name: beachName)
+            let beachLocation = BeachLocation(province_eu: "Gipuzkoa", province_es: "Gipuzkoa", city_eu: "Eibar", city_es: "Eibar", lat: "", lng: "")
+            let beach = Beach(id: 2, name_eu: beachName, name_es: beachName, location: beachLocation, web_eu: "", web_es: "")
             
             cloudKitBeaches.append(beach)
         }

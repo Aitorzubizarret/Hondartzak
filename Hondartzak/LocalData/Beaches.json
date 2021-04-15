@@ -1,10 +1,32 @@
 [
     {
         "id": 0,
-        "name": "Zurriola"
+        "name_eu": "Alkolea hondartza",
+        "name_es": "Playa de Alkolea",
+        "location": {
+            "province_eu": "Gipuzkoa",
+            "province_es": "Guipúzcoa",
+            "city_eu": "Mutriku",
+            "city_es": "Motrico (Mutriku)",
+            "lat": "43.30762578068058",
+            "lng": "-2.3710132372955286"
+        },
+        "web_eu": "https://turismoa.euskadi.eus/eu/hondartzak-urtegiak-ibaiak/alkolea-hondartza/aa30-12375/eu/",
+        "web_es": "https://turismo.euskadi.eus/es/playas-embalses-rios/playa-de-alkolea/aa30-12375/es/"
     },
     {
         "id": 1,
-        "name": "La Concha"
-    },
+        "name_eu": "Antilla hondartza",
+        "name_es": "Playa de Antilla",
+        "location": {
+            "province_eu": "Gipuzkoa",
+            "province_es": "Guipúzcoa",
+            "city_eu": "Orio",
+            "city_es": "Orio",
+            "lat": "43.288723",
+            "lng": "-2.127956"
+        },
+        "web_eu": "https://turismoa.euskadi.eus/eu/hondartzak-urtegiak-ibaiak/antilla-hondartza/aa30-12375/eu/",
+        "web_es": "https://turismo.euskadi.eus/es/playas-embalses-rios/playa-de-antilla/aa30-12375/es/"
+    }
 ]

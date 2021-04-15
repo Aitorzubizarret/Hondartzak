@@ -31,8 +31,8 @@ class MainViewController: UIViewController {
         self.setupTableView()
         self.bind()
         
-        //self.beachesViewModel.getLocalData()
-        self.beachesViewModel.getCloudkitData()
+        self.beachesViewModel.getLocalData()
+        //self.beachesViewModel.getCloudkitData()
     }
     
     ///
@@ -80,7 +80,7 @@ extension MainViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = UITableViewCell()
-        cell.textLabel?.text = self.beachesList[indexPath.row].name
+        cell.textLabel?.text = self.beachesList[indexPath.row].name_eu
         return cell
     }
     
