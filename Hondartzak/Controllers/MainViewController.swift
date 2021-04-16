@@ -62,6 +62,7 @@ extension MainViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let beachDetailVC: BeachDetailViewController = BeachDetailViewController()
+        beachDetailVC.beach = self.beachesList[indexPath.row]
         self.navigationController?.pushViewController(beachDetailVC, animated: true)
     }
     
