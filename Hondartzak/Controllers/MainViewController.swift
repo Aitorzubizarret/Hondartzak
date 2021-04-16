@@ -25,8 +25,9 @@ class MainViewController: UIViewController {
     // MARK: - Methods
     
     override func viewDidLoad() {
-        print("MainViewController viewDidLoad")
         super.viewDidLoad()
+        
+        self.title = "Hondartzak"
         
         self.setupTableView()
         self.bind()
