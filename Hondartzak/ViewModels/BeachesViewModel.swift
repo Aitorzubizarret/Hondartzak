@@ -54,9 +54,13 @@ class BeachesViewModel {
         var cloudKitBeaches = [Beach]()
         
         operation.recordFetchedBlock = { record in
-            let beachName: String = record["name"] as! String
-            let beachLocation = BeachLocation(province_eu: "Gipuzkoa", province_es: "Gipuzkoa", city_eu: "Eibar", city_es: "Eibar", lat: "", lng: "")
-            let beach = Beach(id: 2, name_eu: beachName, name_es: beachName, location: beachLocation, web_eu: "", web_es: "")
+            let beachCloudKitName: String = record["name"] as! String
+            let beachName: BeachDataMultilanguage = BeachDataMultilanguage(eu: beachCloudKitName, es: "")
+            let beachDescription: BeachDataMultilanguage = BeachDataMultilanguage(eu: "", es: "")
+            let beachProvince: BeachDataMultilanguage = BeachDataMultilanguage(eu: "Gipuzkoa", es: "Guipuzcoa")
+            let beachCity: BeachDataMultilanguage = BeachDataMultilanguage(eu: "Eibar", es: "Eibar")
+            let beachLocation = BeachLocation(province: beachProvince, city: beachCity, lat: "", lng: "")
+            let beach = Beach(id: 2, name: beachName, description: beachDescription, location: beachLocation, webs: [])
             
             cloudKitBeaches.append(beach)
         }

@@ -17,7 +17,7 @@ class BeachDetailViewController: UIViewController {
         didSet {
             guard let beach = self.beach else { return }
             
-            self.title = beach.name_eu
+            self.title = beach.name.eu
         }
     }
     

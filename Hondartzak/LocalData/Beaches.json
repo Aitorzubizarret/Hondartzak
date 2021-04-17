@@ -1,32 +1,72 @@
 [
     {
         "id": 0,
-        "name_eu": "Alkolea hondartza",
-        "name_es": "Playa de Alkolea",
+        "name": {
+            "eu": "Alkolea hondartza",
+            "es": "Playa de Alkolea"
+        },
+        "description": {
+            "eu": "",
+            "es": ""
+        },
         "location": {
-            "province_eu": "Gipuzkoa",
-            "province_es": "Guipúzcoa",
-            "city_eu": "Mutriku",
-            "city_es": "Motrico (Mutriku)",
+            "province": {
+                "eu": "Gipuzkoa",
+                "es": "Guipúzcoa"
+            },
+            "city": {
+                "eu": "Mutriku",
+                "es": "Motrico"
+            },
             "lat": "43.30762578068058",
             "lng": "-2.3710132372955286"
         },
-        "web_eu": "https://turismoa.euskadi.eus/eu/hondartzak-urtegiak-ibaiak/alkolea-hondartza/aa30-12375/eu/",
-        "web_es": "https://turismo.euskadi.eus/es/playas-embalses-rios/playa-de-alkolea/aa30-12375/es/"
+        "webs": [
+            {
+                "url": "https://turismoa.euskadi.eus/eu/hondartzak-urtegiak-ibaiak/alkolea-hondartza/aa30-12375/eu/",
+                "description": "Web",
+                "language": "Euskera"
+            },
+            {
+                "url": "https://turismo.euskadi.eus/es/playas-embalses-rios/playa-de-alkolea/aa30-12375/es/",
+                "description": "Web",
+                "language": "Español"
+            }
+        ]
     },
     {
         "id": 1,
-        "name_eu": "Antilla hondartza",
-        "name_es": "Playa de Antilla",
+        "name": {
+            "eu": "Antilla hondartza",
+            "es": "Playa de Antilla"
+        },
+        "description": {
+            "eu": "",
+            "es": ""
+        },
         "location": {
-            "province_eu": "Gipuzkoa",
-            "province_es": "Guipúzcoa",
-            "city_eu": "Orio",
-            "city_es": "Orio",
+            "province": {
+                "eu": "Gipuzkoa",
+                "es": "Guipúzcoa"
+            },
+            "city": {
+                "eu": "Orio",
+                "es": "Orio"
+            },
             "lat": "43.288723",
             "lng": "-2.127956"
         },
-        "web_eu": "https://turismoa.euskadi.eus/eu/hondartzak-urtegiak-ibaiak/antilla-hondartza/aa30-12375/eu/",
-        "web_es": "https://turismo.euskadi.eus/es/playas-embalses-rios/playa-de-antilla/aa30-12375/es/"
+        "webs": [
+            {
+                "url": "https://turismoa.euskadi.eus/eu/hondartzak-urtegiak-ibaiak/antilla-hondartza/aa30-12375/eu/",
+                "description": "",
+                "language": ""
+            },
+            {
+                "url": "https://turismo.euskadi.eus/es/playas-embalses-rios/playa-de-antilla/aa30-12375/es/",
+                "description": "",
+                "language": ""
+            }
+        ]
     }
 ]
