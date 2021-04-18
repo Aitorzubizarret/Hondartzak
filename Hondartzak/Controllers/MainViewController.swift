@@ -21,6 +21,7 @@ class MainViewController: UIViewController {
             self.tableView.reloadData()
         }
     }
+    let mapTableViewCellIdentifier: String = "mapTableViewCellIdentifier"
     
     // MARK: - Methods
     
@@ -42,6 +43,10 @@ class MainViewController: UIViewController {
     private func setupTableView() {
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        
+        // Register cells.
+        let mapUINib: UINib = UINib(nibName: "MapTableViewCell", bundle: nil)
+        self.tableView.register(mapUINib, forCellReuseIdentifier: self.mapTableViewCellIdentifier)
     }
     
     ///
@@ -61,9 +66,14 @@ class MainViewController: UIViewController {
 extension MainViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let beachDetailVC: BeachDetailViewController = BeachDetailViewController()
-        beachDetailVC.beach = self.beachesList[indexPath.row]
-        self.navigationController?.pushViewController(beachDetailVC, animated: true)
+        if indexPath.section == 0 {
+            let beachDetailVC: BeachDetailViewController = BeachDetailViewController()
+            beachDetailVC.beach = self.beachesList[indexPath.row]
+            self.navigationController?.pushViewController(beachDetailVC, animated: true)
+        } else {
+            let mapVC: MapViewController = MapViewController()
+            self.navigationController?.pushViewController(mapVC, animated: true)
+        }
     }
     
 }
@@ -73,17 +83,26 @@ extension MainViewController: UITableViewDelegate {
 extension MainViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return 2
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.beachesList.count
+        if section == 0 {
+            return self.beachesList.count
+        } else {
+            return 1
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = UITableViewCell()
-        cell.textLabel?.text = self.beachesList[indexPath.row].name.eu
-        return cell
+        if indexPath.section == 0 {
+            let cell: UITableViewCell = UITableViewCell()
+            cell.textLabel?.text = self.beachesList[indexPath.row].name.eu
+            return cell
+        } else {
+            let cell = self.tableView.dequeueReusableCell(withIdentifier: self.mapTableViewCellIdentifier) as! MapTableViewCell
+            return cell
+        }
     }
     
 }
