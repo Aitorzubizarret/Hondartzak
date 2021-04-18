@@ -16,6 +16,8 @@
 		42942059262648390064547C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42942058262648390064547C /* CloudKit.framework */; };
 		42B71F6726235F54000B985B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B71F6526235F54000B985B /* MainViewController.swift */; };
 		42B71F6826235F54000B985B /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42B71F6626235F54000B985B /* MainViewController.xib */; };
+		42DC8289262CDE10008AE1B7 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC8287262CDE10008AE1B7 /* MapViewController.swift */; };
+		42DC828A262CDE10008AE1B7 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DC8288262CDE10008AE1B7 /* MapViewController.xib */; };
 		42F579D0262377E30072EA67 /* Beach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F579CF262377E30072EA67 /* Beach.swift */; };
 		42F579D3262378320072EA67 /* BeachesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F579D2262378320072EA67 /* BeachesViewModel.swift */; };
 		42F579D72623826C0072EA67 /* Beaches.json in Resources */ = {isa = PBXBuildFile; fileRef = 42F579D62623826C0072EA67 /* Beaches.json */; };
@@ -36,6 +38,8 @@
 		42942058262648390064547C /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		42B71F6526235F54000B985B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		42B71F6626235F54000B985B /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		42DC8287262CDE10008AE1B7 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		42DC8288262CDE10008AE1B7 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		42F579CF262377E30072EA67 /* Beach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beach.swift; sourceTree = "<group>"; };
 		42F579D2262378320072EA67 /* BeachesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachesViewModel.swift; sourceTree = "<group>"; };
 		42F579D62623826C0072EA67 /* Beaches.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Beaches.json; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 			children = (
 				42B71F6626235F54000B985B /* MainViewController.xib */,
 				42942050262643E60064547C /* BeachDetailViewController.xib */,
+				42DC8288262CDE10008AE1B7 /* MapViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 			children = (
 				42B71F6526235F54000B985B /* MainViewController.swift */,
 				4294204F262643E60064547C /* BeachDetailViewController.swift */,
+				42DC8287262CDE10008AE1B7 /* MapViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -199,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				422C003726235ABA008E9A18 /* LaunchScreen.storyboard in Resources */,
+				42DC828A262CDE10008AE1B7 /* MapViewController.xib in Resources */,
 				42B71F6826235F54000B985B /* MainViewController.xib in Resources */,
 				422C003426235ABA008E9A18 /* Assets.xcassets in Resources */,
 				42942052262643E60064547C /* BeachDetailViewController.xib in Resources */,
@@ -220,6 +227,7 @@
 				42942051262643E60064547C /* BeachDetailViewController.swift in Sources */,
 				42F579DB262382D20072EA67 /* JSONReader.swift in Sources */,
 				42B71F6726235F54000B985B /* MainViewController.swift in Sources */,
+				42DC8289262CDE10008AE1B7 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
