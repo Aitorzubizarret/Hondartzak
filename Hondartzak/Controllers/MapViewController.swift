@@ -6,24 +6,34 @@
 //
 
 import UIKit
+import MapKit
 
 class MapViewController: UIViewController {
-
+    
+    // MARK: - UI Elements
+    
+    @IBOutlet weak var mapView: UIView!
+    
+    // MARK: - Properties
+    
+    private var map: MKMapView {
+        let width: CGFloat = self.mapView.bounds.width
+        let height: CGFloat = self.mapView.bounds.height
+        return MKMapView(frame: CGRect(x: 0, y: 0, width: width, height: height))
+    }
+    
+    // MARK: - Methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.setupMapView()
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    ///
+    /// Setup the Map.
+    ///
+    private func setupMapView() {
+        self.mapView.addSubview(map)
     }
-    */
-
 }

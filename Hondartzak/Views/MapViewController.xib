@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController" customModule="Hondartzak" customModuleProvider="target">
             <connections>
+                <outlet property="mapView" destination="Hfy-7d-pPe" id="lsG-sj-5O5"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,9 +19,21 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hfy-7d-pPe">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="141" y="136"/>
+            <constraints>
+                <constraint firstItem="Hfy-7d-pPe" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="00R-7c-99Z"/>
+                <constraint firstItem="Hfy-7d-pPe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="GCU-vv-msx"/>
+                <constraint firstItem="Hfy-7d-pPe" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Zmf-7t-cRE"/>
+                <constraint firstItem="Hfy-7d-pPe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="k7a-6j-ILv"/>
+            </constraints>
+            <point key="canvasLocation" x="140.57971014492756" y="135.9375"/>
         </view>
     </objects>
     <resources>
