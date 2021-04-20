@@ -11,6 +11,10 @@
 		422C002D26235AB9008E9A18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422C002C26235AB9008E9A18 /* SceneDelegate.swift */; };
 		422C003426235ABA008E9A18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 422C003326235ABA008E9A18 /* Assets.xcassets */; };
 		422C003726235ABA008E9A18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 422C003526235ABA008E9A18 /* LaunchScreen.storyboard */; };
+		4239D2E4262F6E5600A42C50 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4239D2E3262F6E5600A42C50 /* City.swift */; };
+		4239D2E7262F6EAA00A42C50 /* MultiLanguageField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4239D2E6262F6EAA00A42C50 /* MultiLanguageField.swift */; };
+		4239D2EA262F828700A42C50 /* LatLng.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4239D2E9262F828700A42C50 /* LatLng.swift */; };
+		4239D2ED262F834400A42C50 /* Province.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4239D2EC262F834400A42C50 /* Province.swift */; };
 		42942051262643E60064547C /* BeachDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4294204F262643E60064547C /* BeachDetailViewController.swift */; };
 		42942052262643E60064547C /* BeachDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42942050262643E60064547C /* BeachDetailViewController.xib */; };
 		42942059262648390064547C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42942058262648390064547C /* CloudKit.framework */; };
@@ -33,6 +37,10 @@
 		422C003326235ABA008E9A18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		422C003626235ABA008E9A18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		422C003826235ABA008E9A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4239D2E3262F6E5600A42C50 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		4239D2E6262F6EAA00A42C50 /* MultiLanguageField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiLanguageField.swift; sourceTree = "<group>"; };
+		4239D2E9262F828700A42C50 /* LatLng.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatLng.swift; sourceTree = "<group>"; };
+		4239D2EC262F834400A42C50 /* Province.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Province.swift; sourceTree = "<group>"; };
 		4242C7D82624F3990076599C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4294204F262643E60064547C /* BeachDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachDetailViewController.swift; sourceTree = "<group>"; };
 		42942050262643E60064547C /* BeachDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeachDetailViewController.xib; sourceTree = "<group>"; };
@@ -111,6 +119,10 @@
 			isa = PBXGroup;
 			children = (
 				42F579CF262377E30072EA67 /* Beach.swift */,
+				4239D2E3262F6E5600A42C50 /* City.swift */,
+				4239D2E6262F6EAA00A42C50 /* MultiLanguageField.swift */,
+				4239D2E9262F828700A42C50 /* LatLng.swift */,
+				4239D2EC262F834400A42C50 /* Province.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -243,12 +255,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4239D2E7262F6EAA00A42C50 /* MultiLanguageField.swift in Sources */,
 				422C002B26235AB9008E9A18 /* AppDelegate.swift in Sources */,
 				42F579D3262378320072EA67 /* BeachesViewModel.swift in Sources */,
 				42DC8291262CDEEB008AE1B7 /* MapTableViewCell.swift in Sources */,
 				42F579D0262377E30072EA67 /* Beach.swift in Sources */,
+				4239D2EA262F828700A42C50 /* LatLng.swift in Sources */,
 				422C002D26235AB9008E9A18 /* SceneDelegate.swift in Sources */,
 				42942051262643E60064547C /* BeachDetailViewController.swift in Sources */,
+				4239D2ED262F834400A42C50 /* Province.swift in Sources */,
+				4239D2E4262F6E5600A42C50 /* City.swift in Sources */,
 				42F579DB262382D20072EA67 /* JSONReader.swift in Sources */,
 				42B71F6726235F54000B985B /* MainViewController.swift in Sources */,
 				42DC8289262CDE10008AE1B7 /* MapViewController.swift in Sources */,
