@@ -14,6 +14,7 @@ class MapTableViewCell: UITableViewCell {
     
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var mapImageView: UIImageView!
+    @IBOutlet weak var titleBackgroundView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     
     // MARK: - Properties
@@ -58,7 +59,7 @@ class MapTableViewCell: UITableViewCell {
     ///
     private func setuptView() {
         // View.
-        self.mainView.backgroundColor = UIColor.red
+        self.mainView.backgroundColor = UIColor.gray.withAlphaComponent(0.3)
         self.mainView.layer.cornerRadius = 10
         self.mainView.layer.masksToBounds = true
         
@@ -71,6 +72,18 @@ class MapTableViewCell: UITableViewCell {
                 print("Error snapshot")
             }
         }
+        
+        // View.
+        self.titleBackgroundView.backgroundColor = UIColor.red.withAlphaComponent(0)
+        
+        let gradient: CAGradientLayer = CAGradientLayer()
+        gradient.colors = [UIColor.blue.cgColor, UIColor.white.withAlphaComponent(0).cgColor]
+        gradient.locations = [0.0 , 1.0]
+        gradient.startPoint = CGPoint(x: 0.0, y: 1.0)
+        gradient.endPoint = CGPoint(x: 1.0, y: 1.0)
+        
+        gradient.frame = CGRect(x: 0.0, y: 0.0, width: self.titleBackgroundView.frame.size.width, height: self.titleBackgroundView.frame.size.height)
+        self.titleBackgroundView.layer.insertSublayer(gradient, at: 0)
         
         // Label.
         self.titleLabel.text = "Map"
