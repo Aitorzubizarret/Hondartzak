@@ -45,6 +45,8 @@ class MapTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        self.selectionStyle = .none
+        
         self.setuptView()
     }
 
