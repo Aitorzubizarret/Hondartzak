@@ -13,22 +13,10 @@ struct BeachWebAddress: Codable {
     let language: String
 }
 
-struct BeachDataMultilanguage: Codable {
-    let eu: String
-    let es: String
-}
-
-struct BeachLocation: Codable {
-    let province: BeachDataMultilanguage
-    let city: BeachDataMultilanguage
-    let lat: String
-    let lng: String
-}
-
 struct Beach: Codable {
     let id: Int
-    let name: BeachDataMultilanguage
-    let description: BeachDataMultilanguage
-    let location: BeachLocation
-    let webs: [BeachWebAddress]
+    let name: MultiLanguageField
+    let description: MultiLanguageField
+    let location: LatLng
+    let webs: [BeachWebAddress?]
 }

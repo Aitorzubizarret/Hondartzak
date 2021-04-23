@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BeachCollectionViewCell" customModule="Hondartzak" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nh7-qf-CNr">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYX-1c-ZMl">
+                                <rect key="frame" x="5" y="80" width="90" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="KWI-sa-IBi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7U3-eF-KuG">
+                                <rect key="frame" x="5" y="60.5" width="90" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="7U3-eF-KuG" firstAttribute="leading" secondItem="nh7-qf-CNr" secondAttribute="leading" constant="5" id="1Rd-pB-6gH"/>
+                            <constraint firstAttribute="bottom" secondItem="OYX-1c-ZMl" secondAttribute="bottom" constant="5" id="OvW-vQ-hgH"/>
+                            <constraint firstAttribute="trailing" secondItem="7U3-eF-KuG" secondAttribute="trailing" constant="5" id="VAG-49-4QJ"/>
+                            <constraint firstItem="OYX-1c-ZMl" firstAttribute="top" secondItem="7U3-eF-KuG" secondAttribute="bottom" constant="5" id="bo3-3s-W8Q"/>
+                            <constraint firstAttribute="trailing" secondItem="OYX-1c-ZMl" secondAttribute="trailing" constant="5" id="oLJ-8o-Kgg"/>
+                            <constraint firstItem="OYX-1c-ZMl" firstAttribute="leading" secondItem="nh7-qf-CNr" secondAttribute="leading" constant="5" id="oYl-sD-BFT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="nh7-qf-CNr" secondAttribute="trailing" id="13G-8M-Ykk"/>
+                <constraint firstItem="nh7-qf-CNr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Vac-xj-iw8"/>
+                <constraint firstAttribute="bottom" secondItem="nh7-qf-CNr" secondAttribute="bottom" id="gYp-9r-Oi3"/>
+                <constraint firstItem="nh7-qf-CNr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="uw3-q1-WCT"/>
+            </constraints>
+            <size key="customSize" width="106" height="97"/>
+            <connections>
+                <outlet property="beachNameLabel" destination="7U3-eF-KuG" id="34z-bX-709"/>
+                <outlet property="cityNameLabel" destination="OYX-1c-ZMl" id="i9C-Qn-xvb"/>
+                <outlet property="mainView" destination="nh7-qf-CNr" id="OQn-oM-wQZ"/>
+            </connections>
+            <point key="canvasLocation" x="181.15942028985509" y="115.84821428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

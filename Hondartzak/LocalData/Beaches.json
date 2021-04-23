@@ -2,70 +2,553 @@
     {
         "id": 0,
         "name": {
-            "eu": "Alkolea hondartza",
-            "es": "Playa de Alkolea"
+            "eu": "Gipuzkoa",
+            "es": "Gipuzkoa"
         },
-        "description": {
-            "eu": "",
-            "es": ""
-        },
-        "location": {
-            "province": {
-                "eu": "Gipuzkoa",
-                "es": "Guipúzcoa"
-            },
-            "city": {
-                "eu": "Mutriku",
-                "es": "Motrico"
-            },
-            "lat": "43.30762578068058",
-            "lng": "-2.3710132372955286"
-        },
-        "webs": [
+        "cities": [
             {
-                "url": "https://turismoa.euskadi.eus/eu/hondartzak-urtegiak-ibaiak/alkolea-hondartza/aa30-12375/eu/",
-                "description": "Web",
-                "language": "Euskera"
+                "id": 0,
+                "name": {
+                    "eu": "Mutriku",
+                    "es": "Mutriku - Motrico"
+                },
+                "beaches": [
+                    {
+                        "id": 0,
+                        "name": {
+                            "eu": "Ondarbeltz hondartza",
+                            "es": "Playa de Ondarbeltz"
+                        },
+                        "description": {
+                            "eu": "",
+                            "es": ""
+                        },
+                        "location": {
+                            "lat": "43.301412",
+                            "lng": "-2.357451"
+                        },
+                        "webs": [
+                            {
+                                "url": "https://www.gipuzkoa.eus/es/web/ingurumena/playas/informacion/mutriku/ondarbeltz",
+                                "description": "",
+                                "language": "es"
+                            },
+                            {
+                                "url": "https://www.gipuzkoa.eus/eu/web/ingurumena/hondartzak/informazioa/mutriku/ondarbeltz",
+                                "description": "",
+                                "language": "eu"
+                            },
+                            {
+                                "url": "https://turismo.euskadi.eus/es/playas-embalses-rios/playa-de-ondarbeltz/aa30-12375/es/",
+                                "description": "",
+                                "language": "es"
+                            },
+                            {
+                                "url": "https://turismoa.euskadi.eus/eu/hondartzak-urtegiak-ibaiak/ondarbeltz-hondartza/aa30-12375/eu/",
+                                "description": "",
+                                "language": "eu"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 1,
+                        "name": {
+                            "eu": "Portuko hondartza",
+                            "es": "Playa del Puerto"
+                        },
+                        "description": {
+                            "eu": "",
+                            "es": ""
+                        },
+                        "location": {
+                            "lat": "43.310945042006956",
+                            "lng": "-2.380482422584464"
+                        },
+                        "webs": [
+                            {
+                                "url": "https://turismo.euskadi.eus/es/playas-embalses-rios/playa-del-puerto-mutriku/aa30-12375/es/",
+                                "description": "",
+                                "language": "es"
+                            },
+                            {
+                                "url": "https://turismoa.euskadi.eus/eu/hondartzak-urtegiak-ibaiak/mutrikuko-portuko-hondartza/aa30-12375/eu/",
+                                "description": "",
+                                "language": "eu"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "name": {
+                            "eu": "Saturraran hondartza",
+                            "es": "Playa de Saturraran"
+                        },
+                        "description": {
+                            "eu": "",
+                            "es": ""
+                        },
+                        "location": {
+                            "lat": "43.310945042006956",
+                            "lng": "-2.380482422584464"
+                        },
+                        "webs": [
+                            {
+                                "url": "https://turismo.euskadi.eus/es/playas-embalses-rios/playa-de-saturraran/aa30-12375/es/",
+                                "description": "",
+                                "language": "es"
+                            },
+                            {
+                                "url": "https://turismoa.euskadi.eus/eu/hondartzak-urtegiak-ibaiak/saturraran-hondartza/aa30-12375/eu/",
+                                "description": "",
+                                "language": "eu"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "name": {
+                            "eu": "Alkolea hondartza",
+                            "es": "Playa de la Alkolea"
+                        },
+                        "description": {
+                            "eu": "",
+                            "es": ""
+                        },
+                        "location": {
+                            "lat": "43.30762578068058",
+                            "lng": "-2.3710132372955286"
+                        },
+                        "webs": [
+                            {
+                                "url": "https://turismo.euskadi.eus/es/playas-embalses-rios/playa-de-alkolea/aa30-12375/es/",
+                                "description": "",
+                                "language": "es"
+                            },
+                            {
+                                "url": "https://turismoa.euskadi.eus/eu/hondartzak-urtegiak-ibaiak/alkolea-hondartza/aa30-12375/eu/",
+                                "description": "",
+                                "language": "eu"
+                            }
+                        ]
+                    }
+                ]
             },
             {
-                "url": "https://turismo.euskadi.eus/es/playas-embalses-rios/playa-de-alkolea/aa30-12375/es/",
-                "description": "Web",
-                "language": "Español"
+                "id": 1,
+                "name": {
+                    "eu": "Deba",
+                    "es": "Deba - Deva"
+                },
+                "beaches": [
+                    {
+                        "id": 0,
+                        "name": {
+                            "eu": "Santiago hondartza",
+                            "es": "Playa Santiago"
+                        },
+                        "description": {
+                            "eu": "",
+                            "es": ""
+                        },
+                        "location": {
+                            "lat": "43.2983184172804",
+                            "lng": "-2.354269509262167"
+                        },
+                        "webs": [
+                            {
+                                "url": "https://www.gipuzkoa.eus/es/web/ingurumena/playas/informacion/mutriku/ondarbeltz",
+                                "description": "",
+                                "language": "es"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "name": {
+                    "eu": "Zumaia",
+                    "es": "Zumaia"
+                },
+                "beaches": [
+                    {
+                        "id": 0,
+                        "name": {
+                            "eu": "Itzurun hondartza",
+                            "es": "Playa de Itzurun"
+                        },
+                        "description": {
+                            "eu": "",
+                            "es": ""
+                        },
+                        "location": {
+                            "lat": "43.301412",
+                            "lng": "-2.357451"
+                        },
+                        "webs": [
+                            {
+                                "url": "https://www.gipuzkoa.eus/es/web/ingurumena/playas/informacion/mutriku/ondarbeltz",
+                                "description": "",
+                                "language": "es"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 0,
+                        "name": {
+                            "eu": "Santiago hondartza",
+                            "es": "Playa de Santiago"
+                        },
+                        "description": {
+                            "eu": "",
+                            "es": ""
+                        },
+                        "location": {
+                            "lat": "43.30194579605323",
+                            "lng": "-2.2511672973632812"
+                        },
+                        "webs": [
+                            {
+                                "url": "https://www.gipuzkoa.eus/es/web/ingurumena/playas/informacion/mutriku/ondarbeltz",
+                                "description": "",
+                                "language": "es"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "name": {
+                    "eu": "Getaria",
+                    "es": "Getaria"
+                },
+                "beaches": [
+                    {
+                        "id": 0,
+                        "name": {
+                            "eu": "Gaztetape",
+                            "es": ""
+                        },
+                        "description": {
+                            "eu": "",
+                            "es": ""
+                        },
+                        "location": {
+                            "lat": "43.301412",
+                            "lng": "-2.357451"
+                        },
+                        "webs": [
+                            {
+                                "url": "https://www.gipuzkoa.eus/es/web/ingurumena/playas/informacion/mutriku/ondarbeltz",
+                                "description": "",
+                                "language": "es"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 0,
+                        "name": {
+                            "eu": "Malkorbe",
+                            "es": ""
+                        },
+                        "description": {
+                            "eu": "",
+                            "es": ""
+                        },
+                        "location": {
+                            "lat": "43.301412",
+                            "lng": "-2.357451"
+                        },
+                        "webs": [
+                            {
+                                "url": "https://www.gipuzkoa.eus/es/web/ingurumena/playas/informacion/mutriku/ondarbeltz",
+                                "description": "",
+                                "language": "es"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "name": {
+                    "eu": "Zarautz",
+                    "es": "Zarautz - Zarauz"
+                },
+                "beaches": [
+                    {
+                        "id": 0,
+                        "name": {
+                            "eu": "Zarautz",
+                            "es": ""
+                        },
+                        "description": {
+                            "eu": "",
+                            "es": ""
+                        },
+                        "location": {
+                            "lat": "43.301412",
+                            "lng": "-2.357451"
+                        },
+                        "webs": [
+                            {
+                                "url": "https://www.gipuzkoa.eus/es/web/ingurumena/playas/informacion/mutriku/ondarbeltz",
+                                "description": "",
+                                "language": "es"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "name": {
+                    "eu": "Orio",
+                    "es": "Orio"
+                },
+                "beaches": [
+                    {
+                        "id": 0,
+                        "name": {
+                            "eu": "Antilla",
+                            "es": ""
+                        },
+                        "description": {
+                            "eu": "",
+                            "es": ""
+                        },
+                        "location": {
+                            "lat": "43.301412",
+                            "lng": "-2.357451"
+                        },
+                        "webs": [
+                            {
+                                "url": "https://www.gipuzkoa.eus/es/web/ingurumena/playas/informacion/mutriku/ondarbeltz",
+                                "description": "",
+                                "language": "es"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 0,
+                        "name": {
+                            "eu": "Oribarzar",
+                            "es": ""
+                        },
+                        "description": {
+                            "eu": "",
+                            "es": ""
+                        },
+                        "location": {
+                            "lat": "43.301412",
+                            "lng": "-2.357451"
+                        },
+                        "webs": [
+                            {
+                                "url": "https://www.gipuzkoa.eus/es/web/ingurumena/playas/informacion/mutriku/ondarbeltz",
+                                "description": "",
+                                "language": "es"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "name": {
+                    "eu": "Donostia",
+                    "es": "Donostia - San Sebastian"
+                },
+                "beaches": [
+                    {
+                        "id": 0,
+                        "name": {
+                            "eu": "Kontxa",
+                            "es": ""
+                        },
+                        "description": {
+                            "eu": "",
+                            "es": ""
+                        },
+                        "location": {
+                            "lat": "43.301412",
+                            "lng": "-2.357451"
+                        },
+                        "webs": [
+                            {
+                                "url": "https://www.gipuzkoa.eus/es/web/ingurumena/playas/informacion/mutriku/ondarbeltz",
+                                "description": "",
+                                "language": "es"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 0,
+                        "name": {
+                            "eu": "Ondarreta",
+                            "es": ""
+                        },
+                        "description": {
+                            "eu": "",
+                            "es": ""
+                        },
+                        "location": {
+                            "lat": "43.301412",
+                            "lng": "-2.357451"
+                        },
+                        "webs": [
+                            {
+                                "url": "https://www.gipuzkoa.eus/es/web/ingurumena/playas/informacion/mutriku/ondarbeltz",
+                                "description": "",
+                                "language": "es"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 0,
+                        "name": {
+                            "eu": "Zurriola",
+                            "es": ""
+                        },
+                        "description": {
+                            "eu": "",
+                            "es": ""
+                        },
+                        "location": {
+                            "lat": "43.301412",
+                            "lng": "-2.357451"
+                        },
+                        "webs": [
+                            {
+                                "url": "https://www.gipuzkoa.eus/es/web/ingurumena/playas/informacion/mutriku/ondarbeltz",
+                                "description": "",
+                                "language": "es"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 0,
+                        "name": {
+                            "eu": "Uhartea",
+                            "es": ""
+                        },
+                        "description": {
+                            "eu": "",
+                            "es": ""
+                        },
+                        "location": {
+                            "lat": "43.301412",
+                            "lng": "-2.357451"
+                        },
+                        "webs": [
+                            {
+                                "url": "https://www.gipuzkoa.eus/es/web/ingurumena/playas/informacion/mutriku/ondarbeltz",
+                                "description": "",
+                                "language": "es"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 1,
+                "name": {
+                    "eu": "Hondarribia",
+                    "es": "Hondarribia - Fuenterabía"
+                },
+                "beaches": [
+                    {
+                        "id": 0,
+                        "name": {
+                            "eu": "Hondarribia",
+                            "es": ""
+                        },
+                        "description": {
+                            "eu": "",
+                            "es": ""
+                        },
+                        "location": {
+                            "lat": "43.301412",
+                            "lng": "-2.357451"
+                        },
+                        "webs": [
+                            {
+                                "url": "https://www.gipuzkoa.eus/es/web/ingurumena/playas/informacion/mutriku/ondarbeltz",
+                                "description": "",
+                                "language": "es"
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     },
     {
         "id": 1,
         "name": {
-            "eu": "Antilla hondartza",
-            "es": "Playa de Antilla"
+            "eu": "Bizkaia",
+            "es": "Bizkaia"
         },
-        "description": {
-            "eu": "",
-            "es": ""
-        },
-        "location": {
-            "province": {
-                "eu": "Gipuzkoa",
-                "es": "Guipúzcoa"
-            },
-            "city": {
-                "eu": "Orio",
-                "es": "Orio"
-            },
-            "lat": "43.288723",
-            "lng": "-2.127956"
-        },
-        "webs": [
+        "cities": [
             {
-                "url": "https://turismoa.euskadi.eus/eu/hondartzak-urtegiak-ibaiak/antilla-hondartza/aa30-12375/eu/",
-                "description": "",
-                "language": ""
-            },
+                "id": 0,
+                "name": {
+                    "eu": "",
+                    "es": ""
+                },
+                "beaches": [
+                    {
+                        "id": 0,
+                        "name": {
+                            "eu": "",
+                            "es": ""
+                        },
+                        "description": {
+                            "eu": "",
+                            "es": ""
+                        },
+                        "location": {
+                            "lat": "",
+                            "lng": ""
+                        },
+                        "webs": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": {
+            "eu": "Lapurdi",
+            "es": "Lapurdi - Labort"
+        },
+        "cities": [
             {
-                "url": "https://turismo.euskadi.eus/es/playas-embalses-rios/playa-de-antilla/aa30-12375/es/",
-                "description": "",
-                "language": ""
+                "id": 0,
+                "name": {
+                    "eu": "",
+                    "es": ""
+                },
+                "beaches": [
+                    {
+                        "id": 0,
+                        "name": {
+                            "eu": "",
+                            "es": ""
+                        },
+                        "description": {
+                            "eu": "",
+                            "es": ""
+                        },
+                        "location": {
+                            "lat": "",
+                            "lng": ""
+                        },
+                        "webs": []
+                    }
+                ]
             }
         ]
     }
