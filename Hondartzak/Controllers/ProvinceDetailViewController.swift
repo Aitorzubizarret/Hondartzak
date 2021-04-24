@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProvinceViewController: UIViewController {
+class ProvinceDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

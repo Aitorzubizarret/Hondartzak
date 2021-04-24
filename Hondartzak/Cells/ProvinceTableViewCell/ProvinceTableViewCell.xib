@@ -19,18 +19,18 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNe-CM-P6y">
-                        <rect key="frame" x="10" y="10" width="260" height="20.5"/>
+                        <rect key="frame" x="10" y="10" width="190" height="20.5"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20.5" id="2Kz-CF-8z8"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0B-bt-zHd">
-                        <rect key="frame" x="280" y="10" width="30" height="20.5"/>
+                        <rect key="frame" x="210" y="10" width="100" height="20.5"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="30" id="P9c-vy-65L"/>
+                            <constraint firstAttribute="width" constant="100" id="P9c-vy-65L"/>
                         </constraints>
                         <state key="normal" title="+"/>
                         <connections>

@@ -14,6 +14,7 @@ class ProvinceTableViewCell: UITableViewCell {
     @IBOutlet weak var provinceNameLabel: UILabel!
     @IBOutlet weak var goToAllProvincesListButton: UIButton!
     @IBAction func goToAllProvincesListButtonTapped(_ sender: Any) {
+        self.goToProvinceDetail()
     }
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -24,7 +25,7 @@ class ProvinceTableViewCell: UITableViewCell {
         didSet {
             guard let province = province else { return }
             
-            self.provinceNameLabel.text = province.name.eu
+            self.provinceNameLabel.text = province.name.eu.uppercased()
             
             for city in province.cities {
                 for beach in city.beaches {
@@ -45,8 +46,7 @@ class ProvinceTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        self.selectionStyle = .none
-        
+        self.setupView()
         self.setupCollectionView()
     }
 
@@ -54,6 +54,17 @@ class ProvinceTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    ///
+    /// Setup the View.
+    ///
+    private func setupView() {
+        self.selectionStyle = .none
+        
+        // Button
+        self.goToAllProvincesListButton.setTitle("Zerrenda", for: .normal)
+        self.goToAllProvincesListButton.tintColor = UIColor.black
     }
     
     ///
@@ -75,6 +86,13 @@ class ProvinceTableViewCell: UITableViewCell {
         // Register cells.
         let beachCell: UINib = UINib(nibName: "BeachCollectionViewCell", bundle: nil)
         self.collectionView.register(beachCell, forCellWithReuseIdentifier: self.beachCollectionViewCellIdentifier)
+    }
+    
+    ///
+    /// Go to Province Detail View Controller.
+    ///
+    private func goToProvinceDetail() {
+        self.coordinator?.goToProvinceDetail()
     }
     
 }

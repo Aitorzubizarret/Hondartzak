@@ -15,13 +15,15 @@
 		4239D2E7262F6EAA00A42C50 /* MultiLanguageField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4239D2E6262F6EAA00A42C50 /* MultiLanguageField.swift */; };
 		4239D2EA262F828700A42C50 /* LatLng.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4239D2E9262F828700A42C50 /* LatLng.swift */; };
 		4239D2ED262F834400A42C50 /* Province.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4239D2EC262F834400A42C50 /* Province.swift */; };
-		4239D2F3262F8A7900A42C50 /* ProvinceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4239D2F1262F8A7900A42C50 /* ProvinceViewController.swift */; };
-		4239D2F4262F8A7900A42C50 /* ProvinceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4239D2F2262F8A7900A42C50 /* ProvinceViewController.xib */; };
+		4239D2F3262F8A7900A42C50 /* ProvinceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4239D2F1262F8A7900A42C50 /* ProvinceDetailViewController.swift */; };
+		4239D2F4262F8A7900A42C50 /* ProvinceDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4239D2F2262F8A7900A42C50 /* ProvinceDetailViewController.xib */; };
 		425B0D942630BE6400612435 /* ProvinceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B0D922630BE6400612435 /* ProvinceTableViewCell.swift */; };
 		425B0D952630BE6400612435 /* ProvinceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425B0D932630BE6400612435 /* ProvinceTableViewCell.xib */; };
 		425B0D9A2630D91600612435 /* BeachCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B0D982630D91600612435 /* BeachCollectionViewCell.swift */; };
 		425B0D9B2630D91600612435 /* BeachCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425B0D992630D91600612435 /* BeachCollectionViewCell.xib */; };
 		4279079226344B300063B822 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4279079126344B300063B822 /* MainCoordinator.swift */; };
+		42790798263481030063B822 /* MiniBeachCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42790796263481030063B822 /* MiniBeachCollectionViewCell.swift */; };
+		42790799263481030063B822 /* MiniBeachCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42790797263481030063B822 /* MiniBeachCollectionViewCell.xib */; };
 		42942051262643E60064547C /* BeachDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4294204F262643E60064547C /* BeachDetailViewController.swift */; };
 		42942052262643E60064547C /* BeachDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42942050262643E60064547C /* BeachDetailViewController.xib */; };
 		42942059262648390064547C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42942058262648390064547C /* CloudKit.framework */; };
@@ -48,14 +50,16 @@
 		4239D2E6262F6EAA00A42C50 /* MultiLanguageField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiLanguageField.swift; sourceTree = "<group>"; };
 		4239D2E9262F828700A42C50 /* LatLng.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatLng.swift; sourceTree = "<group>"; };
 		4239D2EC262F834400A42C50 /* Province.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Province.swift; sourceTree = "<group>"; };
-		4239D2F1262F8A7900A42C50 /* ProvinceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceViewController.swift; sourceTree = "<group>"; };
-		4239D2F2262F8A7900A42C50 /* ProvinceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProvinceViewController.xib; sourceTree = "<group>"; };
+		4239D2F1262F8A7900A42C50 /* ProvinceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceDetailViewController.swift; sourceTree = "<group>"; };
+		4239D2F2262F8A7900A42C50 /* ProvinceDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProvinceDetailViewController.xib; sourceTree = "<group>"; };
 		4242C7D82624F3990076599C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		425B0D922630BE6400612435 /* ProvinceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvinceTableViewCell.swift; sourceTree = "<group>"; };
 		425B0D932630BE6400612435 /* ProvinceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProvinceTableViewCell.xib; sourceTree = "<group>"; };
 		425B0D982630D91600612435 /* BeachCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachCollectionViewCell.swift; sourceTree = "<group>"; };
 		425B0D992630D91600612435 /* BeachCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeachCollectionViewCell.xib; sourceTree = "<group>"; };
 		4279079126344B300063B822 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		42790796263481030063B822 /* MiniBeachCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniBeachCollectionViewCell.swift; sourceTree = "<group>"; };
+		42790797263481030063B822 /* MiniBeachCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiniBeachCollectionViewCell.xib; sourceTree = "<group>"; };
 		4294204F262643E60064547C /* BeachDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachDetailViewController.swift; sourceTree = "<group>"; };
 		42942050262643E60064547C /* BeachDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeachDetailViewController.xib; sourceTree = "<group>"; };
 		42942055262648210064547C /* Hondartzak.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hondartzak.entitlements; sourceTree = "<group>"; };
@@ -148,6 +152,15 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		42790795263480C00063B822 /* MiniBeachCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				42790796263481030063B822 /* MiniBeachCollectionViewCell.swift */,
+				42790797263481030063B822 /* MiniBeachCollectionViewCell.xib */,
+			);
+			path = MiniBeachCollectionViewCell;
+			sourceTree = "<group>";
+		};
 		42942057262648390064547C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,7 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				42B71F6626235F54000B985B /* MainViewController.xib */,
-				4239D2F2262F8A7900A42C50 /* ProvinceViewController.xib */,
+				4239D2F2262F8A7900A42C50 /* ProvinceDetailViewController.xib */,
 				42942050262643E60064547C /* BeachDetailViewController.xib */,
 				42DC8288262CDE10008AE1B7 /* MapViewController.xib */,
 			);
@@ -191,7 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				42B71F6526235F54000B985B /* MainViewController.swift */,
-				4239D2F1262F8A7900A42C50 /* ProvinceViewController.swift */,
+				4239D2F1262F8A7900A42C50 /* ProvinceDetailViewController.swift */,
 				4294204F262643E60064547C /* BeachDetailViewController.swift */,
 				42DC8287262CDE10008AE1B7 /* MapViewController.swift */,
 			);
@@ -201,6 +214,7 @@
 		42DC828D262CDEAC008AE1B7 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				42790795263480C00063B822 /* MiniBeachCollectionViewCell */,
 				425B0D972630D8D800612435 /* BeachCollectionViewCell */,
 				425B0D912630BE4600612435 /* ProvinceTableViewCell */,
 				42DC828E262CDECB008AE1B7 /* MapTableViewCell */,
@@ -284,7 +298,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				425B0D9B2630D91600612435 /* BeachCollectionViewCell.xib in Resources */,
-				4239D2F4262F8A7900A42C50 /* ProvinceViewController.xib in Resources */,
+				42790799263481030063B822 /* MiniBeachCollectionViewCell.xib in Resources */,
+				4239D2F4262F8A7900A42C50 /* ProvinceDetailViewController.xib in Resources */,
 				422C003726235ABA008E9A18 /* LaunchScreen.storyboard in Resources */,
 				42DC828A262CDE10008AE1B7 /* MapViewController.xib in Resources */,
 				425B0D952630BE6400612435 /* ProvinceTableViewCell.xib in Resources */,
@@ -309,7 +324,8 @@
 				42F579D3262378320072EA67 /* DataViewModel.swift in Sources */,
 				42DC8291262CDEEB008AE1B7 /* MapTableViewCell.swift in Sources */,
 				425B0D942630BE6400612435 /* ProvinceTableViewCell.swift in Sources */,
-				4239D2F3262F8A7900A42C50 /* ProvinceViewController.swift in Sources */,
+				4239D2F3262F8A7900A42C50 /* ProvinceDetailViewController.swift in Sources */,
+				42790798263481030063B822 /* MiniBeachCollectionViewCell.swift in Sources */,
 				4279079226344B300063B822 /* MainCoordinator.swift in Sources */,
 				42F579D0262377E30072EA67 /* Beach.swift in Sources */,
 				4239D2EA262F828700A42C50 /* LatLng.swift in Sources */,
