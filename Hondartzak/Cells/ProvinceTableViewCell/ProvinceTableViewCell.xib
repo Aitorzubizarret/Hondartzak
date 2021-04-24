@@ -33,6 +33,9 @@
                             <constraint firstAttribute="width" constant="30" id="P9c-vy-65L"/>
                         </constraints>
                         <state key="normal" title="+"/>
+                        <connections>
+                            <action selector="goToAllProvincesListButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="1NP-jh-Zqj"/>
+                        </connections>
                     </button>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="cgt-Yl-Dbn">
                         <rect key="frame" x="10" y="40.5" width="300" height="109.5"/>
@@ -64,7 +67,8 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="collectionView" destination="cgt-Yl-Dbn" id="OCE-du-32W"/>
-                <outlet property="titleLabel" destination="nNe-CM-P6y" id="Hr9-oZ-acQ"/>
+                <outlet property="goToAllProvincesListButton" destination="j0B-bt-zHd" id="b8B-C6-2LI"/>
+                <outlet property="provinceNameLabel" destination="nNe-CM-P6y" id="T16-sH-jjY"/>
             </connections>
             <point key="canvasLocation" x="140.57971014492756" y="139.28571428571428"/>
         </tableViewCell>

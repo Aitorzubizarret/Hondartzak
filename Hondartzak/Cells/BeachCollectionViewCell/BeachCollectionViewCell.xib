@@ -21,8 +21,8 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nh7-qf-CNr">
                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYX-1c-ZMl">
-                                <rect key="frame" x="5" y="80" width="90" height="15"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYX-1c-ZMl">
+                                <rect key="frame" x="6" y="79" width="89" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="KWI-sa-IBi"/>
                                 </constraints>
@@ -30,8 +30,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7U3-eF-KuG">
-                                <rect key="frame" x="5" y="60.5" width="90" height="14.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7U3-eF-KuG">
+                                <rect key="frame" x="6" y="59.5" width="89" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -39,12 +39,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
-                            <constraint firstItem="7U3-eF-KuG" firstAttribute="leading" secondItem="nh7-qf-CNr" secondAttribute="leading" constant="5" id="1Rd-pB-6gH"/>
-                            <constraint firstAttribute="bottom" secondItem="OYX-1c-ZMl" secondAttribute="bottom" constant="5" id="OvW-vQ-hgH"/>
+                            <constraint firstItem="7U3-eF-KuG" firstAttribute="leading" secondItem="nh7-qf-CNr" secondAttribute="leading" constant="6" id="1Rd-pB-6gH"/>
+                            <constraint firstAttribute="bottom" secondItem="OYX-1c-ZMl" secondAttribute="bottom" constant="6" id="OvW-vQ-hgH"/>
                             <constraint firstAttribute="trailing" secondItem="7U3-eF-KuG" secondAttribute="trailing" constant="5" id="VAG-49-4QJ"/>
                             <constraint firstItem="OYX-1c-ZMl" firstAttribute="top" secondItem="7U3-eF-KuG" secondAttribute="bottom" constant="5" id="bo3-3s-W8Q"/>
                             <constraint firstAttribute="trailing" secondItem="OYX-1c-ZMl" secondAttribute="trailing" constant="5" id="oLJ-8o-Kgg"/>
-                            <constraint firstItem="OYX-1c-ZMl" firstAttribute="leading" secondItem="nh7-qf-CNr" secondAttribute="leading" constant="5" id="oYl-sD-BFT"/>
+                            <constraint firstItem="OYX-1c-ZMl" firstAttribute="leading" secondItem="nh7-qf-CNr" secondAttribute="leading" constant="6" id="oYl-sD-BFT"/>
                         </constraints>
                     </view>
                 </subviews>

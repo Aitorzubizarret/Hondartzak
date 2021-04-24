@@ -28,7 +28,7 @@ class BeachCollectionViewCell: UICollectionViewCell {
         didSet {
             guard let cityName = cityName else { return }
             
-            self.cityNameLabel.text = cityName
+            self.cityNameLabel.text = cityName.uppercased()
         }
     }
     

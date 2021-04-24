@@ -11,16 +11,20 @@ class ProvinceTableViewCell: UITableViewCell {
     
     // MARK: - UI Elements
     
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var provinceNameLabel: UILabel!
+    @IBOutlet weak var goToAllProvincesListButton: UIButton!
+    @IBAction func goToAllProvincesListButtonTapped(_ sender: Any) {
+    }
     @IBOutlet weak var collectionView: UICollectionView!
     
     // MARK: - Properties
     
+    weak var coordinator: MainCoordinator?
     var province: Province? {
         didSet {
             guard let province = province else { return }
             
-            self.titleLabel.text = province.name.eu
+            self.provinceNameLabel.text = province.name.eu
             
             for city in province.cities {
                 for beach in city.beaches {
@@ -80,8 +84,7 @@ class ProvinceTableViewCell: UITableViewCell {
 extension ProvinceTableViewCell: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let mapVC: MapViewController = MapViewController()
-//        self.navigationController?.pushViewController(mapVC, animated: true)
+        self.coordinator?.goToBeachDetail()
     }
     
 }
@@ -113,8 +116,9 @@ extension ProvinceTableViewCell: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let totalWidth = self.collectionView.layer.bounds.size.width
-        let cellWidth = (totalWidth - (2 * 10)) / 2.5
-        return CGSize(width: cellWidth, height: 100)
+        let cellWidth = (totalWidth - (2 * 10)) / 2.2
+        let cellHeight = self.collectionView.layer.bounds.size.height
+        return CGSize(width: cellWidth, height: cellHeight)
     }
     
 }

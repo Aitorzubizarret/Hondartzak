@@ -15,6 +15,7 @@ class MainViewController: UIViewController {
     
     // MARK: - Properties
     
+    weak var coordinator: MainCoordinator?
     var dataViewModel: DataViewModel = DataViewModel()
     var provinceList: [Province] = [] {
         didSet {
@@ -73,8 +74,7 @@ extension MainViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 3 {
-            let mapVC: MapViewController = MapViewController()
-            self.navigationController?.pushViewController(mapVC, animated: true)
+            self.coordinator?.goToMaps()
         }
     }
     
@@ -112,6 +112,7 @@ extension MainViewController: UITableViewDataSource {
             return cell
         } else {
             let cell = self.tableView.dequeueReusableCell(withIdentifier: self.provinceTableViewCellIdentifier) as! ProvinceTableViewCell
+            cell.coordinator = self.coordinator
             cell.province = self.provinceList[indexPath.section]
             return cell
         }

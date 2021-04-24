@@ -9,17 +9,24 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
+    // Main Coordinator.
+    var coordinator: MainCoordinator?
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        // Create an instance of the Main VC.
-        let mainVC: MainViewController = MainViewController()
+        ///
+        /// COORDINATOR PATTERN.
+        /// This only works for iOS 12 and older versions. For iOS 13 and newer go to SceneDelegate.
+        ///
         
-        // Create the Navigation Controller and add the Main VC to it.
+        // Create and initialize the Navigation Controller.
         let navigationController: UINavigationController = UINavigationController()
-        navigationController.pushViewController(mainVC, animated: false)
+        
+        // Create the Main Coordinator with the Navigation Controller, and start it.
+        coordinator = MainCoordinator(navigationController: navigationController)
+        coordinator?.start()
         
         // Create the window and add the Navigation Controller as the root view.
         let frame = UIScreen.main.bounds

@@ -21,6 +21,7 @@
 		425B0D952630BE6400612435 /* ProvinceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425B0D932630BE6400612435 /* ProvinceTableViewCell.xib */; };
 		425B0D9A2630D91600612435 /* BeachCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B0D982630D91600612435 /* BeachCollectionViewCell.swift */; };
 		425B0D9B2630D91600612435 /* BeachCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425B0D992630D91600612435 /* BeachCollectionViewCell.xib */; };
+		4279079226344B300063B822 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4279079126344B300063B822 /* MainCoordinator.swift */; };
 		42942051262643E60064547C /* BeachDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4294204F262643E60064547C /* BeachDetailViewController.swift */; };
 		42942052262643E60064547C /* BeachDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42942050262643E60064547C /* BeachDetailViewController.xib */; };
 		42942059262648390064547C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42942058262648390064547C /* CloudKit.framework */; };
@@ -54,6 +55,7 @@
 		425B0D932630BE6400612435 /* ProvinceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProvinceTableViewCell.xib; sourceTree = "<group>"; };
 		425B0D982630D91600612435 /* BeachCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachCollectionViewCell.swift; sourceTree = "<group>"; };
 		425B0D992630D91600612435 /* BeachCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeachCollectionViewCell.xib; sourceTree = "<group>"; };
+		4279079126344B300063B822 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		4294204F262643E60064547C /* BeachDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachDetailViewController.swift; sourceTree = "<group>"; };
 		42942050262643E60064547C /* BeachDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeachDetailViewController.xib; sourceTree = "<group>"; };
 		42942055262648210064547C /* Hondartzak.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hondartzak.entitlements; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				42942055262648210064547C /* Hondartzak.entitlements */,
 				422C002A26235AB9008E9A18 /* AppDelegate.swift */,
 				422C002C26235AB9008E9A18 /* SceneDelegate.swift */,
+				4279078C26344B0D0063B822 /* Coordinator */,
 				42B71F6B262363ED000B985B /* Models */,
 				42F579D5262382510072EA67 /* LocalData */,
 				42B71F6D262363FA000B985B /* ViewModels */,
@@ -135,6 +138,14 @@
 				425B0D992630D91600612435 /* BeachCollectionViewCell.xib */,
 			);
 			path = BeachCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		4279078C26344B0D0063B822 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4279079126344B300063B822 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		42942057262648390064547C /* Frameworks */ = {
@@ -299,6 +310,7 @@
 				42DC8291262CDEEB008AE1B7 /* MapTableViewCell.swift in Sources */,
 				425B0D942630BE6400612435 /* ProvinceTableViewCell.swift in Sources */,
 				4239D2F3262F8A7900A42C50 /* ProvinceViewController.swift in Sources */,
+				4279079226344B300063B822 /* MainCoordinator.swift in Sources */,
 				42F579D0262377E30072EA67 /* Beach.swift in Sources */,
 				4239D2EA262F828700A42C50 /* LatLng.swift in Sources */,
 				422C002D26235AB9008E9A18 /* SceneDelegate.swift in Sources */,

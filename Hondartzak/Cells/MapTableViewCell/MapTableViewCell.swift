@@ -79,10 +79,10 @@ class MapTableViewCell: UITableViewCell {
         self.titleBackgroundView.backgroundColor = UIColor.red.withAlphaComponent(0)
         
         let gradient: CAGradientLayer = CAGradientLayer()
-        gradient.colors = [UIColor.blue.cgColor, UIColor.white.withAlphaComponent(0).cgColor]
-        gradient.locations = [0.0 , 1.0]
-        gradient.startPoint = CGPoint(x: 0.0, y: 1.0)
-        gradient.endPoint = CGPoint(x: 1.0, y: 1.0)
+        gradient.colors = [UIColor.blue.cgColor, UIColor.white.withAlphaComponent(0.1).cgColor]
+        gradient.locations = [0.0 , 0.8]
+        gradient.startPoint = CGPoint(x: 0.3, y: 1.0)
+        gradient.endPoint = CGPoint(x: 1.0, y: 0.2)
         
         gradient.frame = CGRect(x: 0.0, y: 0.0, width: self.titleBackgroundView.frame.size.width, height: self.titleBackgroundView.frame.size.height)
         self.titleBackgroundView.layer.insertSublayer(gradient, at: 0)

@@ -9,19 +9,27 @@ import UIKit
 
 @available (iOS 13, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
+    
+    // Main Coordinator.
+    var coordinator: MainCoordinator?
     var window: UIWindow?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
+        ///
+        /// COORDINATOR PATTERN.
+        /// This only works for iOS 13 and newer versions. For iOS 12 or older go to AppDelegate.
+        ///
+        
+        // Convert the received Scene to UIWindowScene.
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        // Create an instance of the Main VC.
-        let mainVC: MainViewController = MainViewController()
-        
-        // Create the Navigation Controller and add the Main VC to it.
+        // Create and initialize the Navigation Controller.
         let navigationController: UINavigationController = UINavigationController()
-        navigationController.pushViewController(mainVC, animated: false)
+        
+        // Create the Main Coordinator with the Navigation Controller, and start it.
+        coordinator = MainCoordinator(navigationController: navigationController)
+        coordinator?.start()
         
         // Create the window and add the Navigation Controller as the root view.
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
