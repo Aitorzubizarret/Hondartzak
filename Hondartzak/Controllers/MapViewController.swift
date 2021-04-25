@@ -15,9 +15,22 @@ class MapViewController: UIViewController {
     @IBOutlet weak var mapView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    
     // MARK: - Properties
     
+    var provincesList: [Province]? {
+        didSet {
+            guard let provincesList = self.provincesList else { return }
+            
+            for province in provincesList {
+                for city in province.cities {
+                    for beach in city.beaches {
+                        self.beachesList.append(beach)
+                    }
+                }
+            }
+        }
+    }
+    var beachesList: [Beach] = []
     private var map: MKMapView {
         let width: CGFloat = self.mapView.bounds.width
         let height: CGFloat = self.mapView.bounds.height
@@ -37,6 +50,7 @@ class MapViewController: UIViewController {
     /// Setup the View.
     ///
     private func setupView() {
+        
         // Map view.
         self.mapView.addSubview(map)
         
@@ -53,7 +67,7 @@ class MapViewController: UIViewController {
         
         self.collectionView.showsHorizontalScrollIndicator = false
         self.collectionView.backgroundColor = UIColor.clear
-        collectionView!.contentInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        self.collectionView!.contentInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         
         // Register cells.
         let miniBeachCell: UINib = UINib(nibName: "MiniBeachCollectionViewCell", bundle: nil)
@@ -70,11 +84,12 @@ extension MapViewController: UICollectionViewDelegate {}
 extension MapViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return self.beachesList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: self.miniBeachCollectionViewCellIdentifier, for: indexPath) as! MiniBeachCollectionViewCell
+        cell.beach = self.beachesList[indexPath.row]
         return cell
     }
     
@@ -85,10 +100,15 @@ extension MapViewController: UICollectionViewDataSource {
 extension MapViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        let totalWidth = self.collectionView.layer.bounds.size.width
+        let totalWidth = self.collectionView.layer.bounds.size.width - 60
 //        let cellWidth = (totalWidth - (2 * 10)) / 2.2
 //        let cellHeight = self.collectionView.layer.bounds.size.height
-        return CGSize(width: 80, height: 80)
+        return CGSize(width: totalWidth, height: 80)
     }
+    
+}
+
+// MARK: - MKMapView Delegate
+extension MapViewController: MKMapViewDelegate {
     
 }

@@ -17,7 +17,7 @@ class MainViewController: UIViewController {
     
     weak var coordinator: MainCoordinator?
     var dataViewModel: DataViewModel = DataViewModel()
-    var provinceList: [Province] = [] {
+    var provincesList: [Province] = [] {
         didSet {
             self.tableView.reloadData()
         }
@@ -61,8 +61,8 @@ class MainViewController: UIViewController {
     ///
     private func bind() {
         self.dataViewModel.binding = {
-            if let provinceList = self.dataViewModel.provinceList {
-                self.provinceList = provinceList
+            if let provincesList = self.dataViewModel.provincesList {
+                self.provincesList = provincesList
             }
         }
     }
@@ -74,7 +74,7 @@ extension MainViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 3 {
-            self.coordinator?.goToMaps()
+            self.coordinator?.goToMaps(provincesList: self.provincesList)
         }
     }
     
@@ -95,11 +95,11 @@ extension MainViewController: UITableViewDelegate {
 extension MainViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return self.provinceList.count + 1 // Provinces + map.
+        return self.provincesList.count + 1 // Provinces + map.
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if self.provinceList.count > 0 {
+        if self.provincesList.count > 0 {
             return 1
         } else {
             return 0
@@ -113,7 +113,7 @@ extension MainViewController: UITableViewDataSource {
         } else {
             let cell = self.tableView.dequeueReusableCell(withIdentifier: self.provinceTableViewCellIdentifier) as! ProvinceTableViewCell
             cell.coordinator = self.coordinator
-            cell.province = self.provinceList[indexPath.section]
+            cell.province = self.provincesList[indexPath.section]
             return cell
         }
     }

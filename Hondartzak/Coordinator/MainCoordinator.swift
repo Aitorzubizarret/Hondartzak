@@ -29,8 +29,9 @@ final class MainCoordinator: Coordinator {
     }
     
     // Go to Maps View Controller.
-    func goToMaps() {
+    func goToMaps(provincesList: [Province]?) {
         let mapVC: MapViewController = MapViewController()
+        mapVC.provincesList = provincesList
         self.navigationController.pushViewController(mapVC, animated: true)
     }
     

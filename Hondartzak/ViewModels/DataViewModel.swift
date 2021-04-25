@@ -16,7 +16,7 @@ class DataViewModel {
     var binding = { () -> () in }
     
     // Data Source.
-    var provinceList: [Province]? {
+    var provincesList: [Province]? {
         didSet {
             self.binding()
         }
@@ -34,7 +34,7 @@ class DataViewModel {
         jsonReader(filename: "Beaches") { (success, data: [Province]?) in
             DispatchQueue.main.async {
                 if success, let receivedData = data {
-                    self.provinceList = receivedData
+                    self.provincesList = receivedData
                 }
             }
         }
@@ -70,7 +70,7 @@ class DataViewModel {
                 if let error = error {
                     print("Error: \(error)")
                 } else {
-                    self.provinceList = cloudKitBeaches
+                    self.provincesList = cloudKitBeaches
                 }
             }
         }

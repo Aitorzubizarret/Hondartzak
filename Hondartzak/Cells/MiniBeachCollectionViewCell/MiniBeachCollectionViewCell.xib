@@ -26,7 +26,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="uOw-lq-3NB"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -48,6 +48,9 @@
                 <constraint firstItem="CgL-92-HQi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Uts-Bh-nk1"/>
             </constraints>
             <size key="customSize" width="88" height="82"/>
+            <connections>
+                <outlet property="beachNameLabel" destination="WbV-rg-Yjp" id="I5Y-Hn-sXR"/>
+            </connections>
             <point key="canvasLocation" x="168.11594202898553" y="112.5"/>
         </collectionViewCell>
     </objects>
