@@ -92,7 +92,9 @@ class ProvinceTableViewCell: UITableViewCell {
     /// Go to Province Detail View Controller.
     ///
     private func goToProvinceDetail() {
-        self.coordinator?.goToProvinceDetail()
+        guard let province = self.province else { return }
+        
+        self.coordinator?.goToProvinceDetail(province: province)
     }
     
 }

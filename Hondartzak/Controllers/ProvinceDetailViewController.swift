@@ -8,22 +8,27 @@
 import UIKit
 
 class ProvinceDetailViewController: UIViewController {
-
+    
+    // MARK: - UI Elements
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    // MARK: - Properties
+    
+    var province: Province? {
+        didSet {
+            guard let province = self.province else { return }
+            
+            self.title = province.name.eu
+        }
+    }
+    
+    // MARK: - Methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }

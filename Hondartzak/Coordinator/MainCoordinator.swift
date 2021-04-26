@@ -42,8 +42,9 @@ final class MainCoordinator: Coordinator {
     }
     
     // Go to Province Detail View Controller.
-    func goToProvinceDetail() {
+    func goToProvinceDetail(province: Province) {
         let provinceDetailVC: ProvinceDetailViewController = ProvinceDetailViewController()
+        provinceDetailVC.province = province
         self.navigationController.pushViewController(provinceDetailVC, animated: true)
     }
 }
