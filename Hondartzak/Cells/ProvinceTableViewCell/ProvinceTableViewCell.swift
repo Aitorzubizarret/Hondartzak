@@ -104,7 +104,7 @@ class ProvinceTableViewCell: UITableViewCell {
 extension ProvinceTableViewCell: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.coordinator?.goToBeachDetail()
+        self.coordinator?.goToBeachDetail(beach: self.beaches[indexPath.row])
     }
     
 }

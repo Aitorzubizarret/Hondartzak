@@ -36,8 +36,9 @@ final class MainCoordinator: Coordinator {
     }
     
     // Go to Beach Detail View Controller.
-    func goToBeachDetail() {
+    func goToBeachDetail(beach: Beach?) {
         let beachVC: BeachDetailViewController = BeachDetailViewController()
+        beachVC.beach = beach
         self.navigationController.pushViewController(beachVC, animated: true)
     }
     
