@@ -24,6 +24,9 @@
 		4279079226344B300063B822 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4279079126344B300063B822 /* MainCoordinator.swift */; };
 		42790798263481030063B822 /* MiniBeachCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42790796263481030063B822 /* MiniBeachCollectionViewCell.swift */; };
 		42790799263481030063B822 /* MiniBeachCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42790797263481030063B822 /* MiniBeachCollectionViewCell.xib */; };
+		42793C08263C929200CBC5E4 /* BeachTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42793C06263C929200CBC5E4 /* BeachTableViewCell.swift */; };
+		42793C09263C929200CBC5E4 /* BeachTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42793C07263C929200CBC5E4 /* BeachTableViewCell.xib */; };
+		42793C0C263C9D3100CBC5E4 /* BeachCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42793C0B263C9D3100CBC5E4 /* BeachCity.swift */; };
 		42942051262643E60064547C /* BeachDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4294204F262643E60064547C /* BeachDetailViewController.swift */; };
 		42942052262643E60064547C /* BeachDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42942050262643E60064547C /* BeachDetailViewController.xib */; };
 		42942059262648390064547C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42942058262648390064547C /* CloudKit.framework */; };
@@ -60,6 +63,9 @@
 		4279079126344B300063B822 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		42790796263481030063B822 /* MiniBeachCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniBeachCollectionViewCell.swift; sourceTree = "<group>"; };
 		42790797263481030063B822 /* MiniBeachCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiniBeachCollectionViewCell.xib; sourceTree = "<group>"; };
+		42793C06263C929200CBC5E4 /* BeachTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachTableViewCell.swift; sourceTree = "<group>"; };
+		42793C07263C929200CBC5E4 /* BeachTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeachTableViewCell.xib; sourceTree = "<group>"; };
+		42793C0B263C9D3100CBC5E4 /* BeachCity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachCity.swift; sourceTree = "<group>"; };
 		4294204F262643E60064547C /* BeachDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachDetailViewController.swift; sourceTree = "<group>"; };
 		42942050262643E60064547C /* BeachDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeachDetailViewController.xib; sourceTree = "<group>"; };
 		42942055262648210064547C /* Hondartzak.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hondartzak.entitlements; sourceTree = "<group>"; };
@@ -161,6 +167,15 @@
 			path = MiniBeachCollectionViewCell;
 			sourceTree = "<group>";
 		};
+		42793C05263C927200CBC5E4 /* BeachTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				42793C06263C929200CBC5E4 /* BeachTableViewCell.swift */,
+				42793C07263C929200CBC5E4 /* BeachTableViewCell.xib */,
+			);
+			path = BeachTableViewCell;
+			sourceTree = "<group>";
+		};
 		42942057262648390064547C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				42F579CF262377E30072EA67 /* Beach.swift */,
+				42793C0B263C9D3100CBC5E4 /* BeachCity.swift */,
 				4239D2E3262F6E5600A42C50 /* City.swift */,
 				4239D2E6262F6EAA00A42C50 /* MultiLanguageField.swift */,
 				4239D2E9262F828700A42C50 /* LatLng.swift */,
@@ -216,6 +232,7 @@
 			children = (
 				42790795263480C00063B822 /* MiniBeachCollectionViewCell */,
 				425B0D972630D8D800612435 /* BeachCollectionViewCell */,
+				42793C05263C927200CBC5E4 /* BeachTableViewCell */,
 				425B0D912630BE4600612435 /* ProvinceTableViewCell */,
 				42DC828E262CDECB008AE1B7 /* MapTableViewCell */,
 			);
@@ -302,6 +319,7 @@
 				4239D2F4262F8A7900A42C50 /* ProvinceDetailViewController.xib in Resources */,
 				422C003726235ABA008E9A18 /* LaunchScreen.storyboard in Resources */,
 				42DC828A262CDE10008AE1B7 /* MapViewController.xib in Resources */,
+				42793C09263C929200CBC5E4 /* BeachTableViewCell.xib in Resources */,
 				425B0D952630BE6400612435 /* ProvinceTableViewCell.xib in Resources */,
 				42B71F6826235F54000B985B /* MainViewController.xib in Resources */,
 				422C003426235ABA008E9A18 /* Assets.xcassets in Resources */,
@@ -331,9 +349,11 @@
 				4239D2EA262F828700A42C50 /* LatLng.swift in Sources */,
 				422C002D26235AB9008E9A18 /* SceneDelegate.swift in Sources */,
 				42942051262643E60064547C /* BeachDetailViewController.swift in Sources */,
+				42793C0C263C9D3100CBC5E4 /* BeachCity.swift in Sources */,
 				4239D2ED262F834400A42C50 /* Province.swift in Sources */,
 				4239D2E4262F6E5600A42C50 /* City.swift in Sources */,
 				42F579DB262382D20072EA67 /* JSONReader.swift in Sources */,
+				42793C08263C929200CBC5E4 /* BeachTableViewCell.swift in Sources */,
 				42B71F6726235F54000B985B /* MainViewController.swift in Sources */,
 				42DC8289262CDE10008AE1B7 /* MapViewController.swift in Sources */,
 			);
