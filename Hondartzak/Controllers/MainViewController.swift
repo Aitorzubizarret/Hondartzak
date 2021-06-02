@@ -47,6 +47,7 @@ class MainViewController: UIViewController {
         self.tableView.dataSource = self
         
         self.tableView.estimatedRowHeight = 100
+        self.tableView.separatorStyle = .none
         
         // Register cells.
         let provinceCell: UINib = UINib(nibName: "ProvinceTableViewCell", bundle: nil)
