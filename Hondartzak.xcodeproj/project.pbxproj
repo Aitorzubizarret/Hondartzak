@@ -3,31 +3,65 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		422C002B26235AB9008E9A18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422C002A26235AB9008E9A18 /* AppDelegate.swift */; };
-		422C002D26235AB9008E9A18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422C002C26235AB9008E9A18 /* SceneDelegate.swift */; };
-		422C003426235ABA008E9A18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 422C003326235ABA008E9A18 /* Assets.xcassets */; };
-		422C003726235ABA008E9A18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 422C003526235ABA008E9A18 /* LaunchScreen.storyboard */; };
-		42B71F6726235F54000B985B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B71F6526235F54000B985B /* MainViewController.swift */; };
-		42B71F6826235F54000B985B /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42B71F6626235F54000B985B /* MainViewController.xib */; };
+		1A19B0602A10F33B0000249A /* HondartzakApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A19B05F2A10F33B0000249A /* HondartzakApp.swift */; };
+		1A19B0622A10F33B0000249A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A19B0612A10F33B0000249A /* ContentView.swift */; };
+		1A19B0642A10F33C0000249A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A19B0632A10F33C0000249A /* Assets.xcassets */; };
+		1A19B0672A10F33C0000249A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A19B0662A10F33C0000249A /* Preview Assets.xcassets */; };
+		1A19B0712A10F33D0000249A /* HondartzakTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A19B0702A10F33D0000249A /* HondartzakTests.swift */; };
+		1A19B07B2A10F33D0000249A /* HondartzakUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A19B07A2A10F33D0000249A /* HondartzakUITests.swift */; };
+		1A19B07D2A10F33D0000249A /* HondartzakUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A19B07C2A10F33D0000249A /* HondartzakUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1A19B06D2A10F33D0000249A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A19B0542A10F33B0000249A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A19B05B2A10F33B0000249A;
+			remoteInfo = Hondartzak;
+		};
+		1A19B0772A10F33D0000249A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A19B0542A10F33B0000249A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A19B05B2A10F33B0000249A;
+			remoteInfo = Hondartzak;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		422C002726235AB9008E9A18 /* Hondartzak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hondartzak.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		422C002A26235AB9008E9A18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		422C002C26235AB9008E9A18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		422C003326235ABA008E9A18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		422C003626235ABA008E9A18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		422C003826235ABA008E9A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		42B71F6526235F54000B985B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		42B71F6626235F54000B985B /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		1A19B05C2A10F33B0000249A /* Hondartzak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hondartzak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A19B05F2A10F33B0000249A /* HondartzakApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HondartzakApp.swift; sourceTree = "<group>"; };
+		1A19B0612A10F33B0000249A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1A19B0632A10F33C0000249A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A19B0662A10F33C0000249A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1A19B06C2A10F33D0000249A /* HondartzakTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HondartzakTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A19B0702A10F33D0000249A /* HondartzakTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HondartzakTests.swift; sourceTree = "<group>"; };
+		1A19B0762A10F33D0000249A /* HondartzakUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HondartzakUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A19B07A2A10F33D0000249A /* HondartzakUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HondartzakUITests.swift; sourceTree = "<group>"; };
+		1A19B07C2A10F33D0000249A /* HondartzakUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HondartzakUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		422C002426235AB9008E9A18 /* Frameworks */ = {
+		1A19B0592A10F33B0000249A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A19B0692A10F33D0000249A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A19B0732A10F33D0000249A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,46 +71,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		422C001E26235AB9008E9A18 = {
+		1A19B0532A10F33B0000249A = {
 			isa = PBXGroup;
 			children = (
-				422C002926235AB9008E9A18 /* Hondartzak */,
-				422C002826235AB9008E9A18 /* Products */,
+				1A19B05E2A10F33B0000249A /* Hondartzak */,
+				1A19B06F2A10F33D0000249A /* HondartzakTests */,
+				1A19B0792A10F33D0000249A /* HondartzakUITests */,
+				1A19B05D2A10F33B0000249A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		422C002826235AB9008E9A18 /* Products */ = {
+		1A19B05D2A10F33B0000249A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				422C002726235AB9008E9A18 /* Hondartzak.app */,
+				1A19B05C2A10F33B0000249A /* Hondartzak.app */,
+				1A19B06C2A10F33D0000249A /* HondartzakTests.xctest */,
+				1A19B0762A10F33D0000249A /* HondartzakUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		422C002926235AB9008E9A18 /* Hondartzak */ = {
+		1A19B05E2A10F33B0000249A /* Hondartzak */ = {
 			isa = PBXGroup;
 			children = (
-				422C002A26235AB9008E9A18 /* AppDelegate.swift */,
-				422C002C26235AB9008E9A18 /* SceneDelegate.swift */,
-				422C003326235ABA008E9A18 /* Assets.xcassets */,
-				422C003526235ABA008E9A18 /* LaunchScreen.storyboard */,
-				422C003826235ABA008E9A18 /* Info.plist */,
-				42B71F6526235F54000B985B /* MainViewController.swift */,
-				42B71F6626235F54000B985B /* MainViewController.xib */,
+				1A19B05F2A10F33B0000249A /* HondartzakApp.swift */,
+				1A19B0612A10F33B0000249A /* ContentView.swift */,
+				1A19B0632A10F33C0000249A /* Assets.xcassets */,
+				1A19B0652A10F33C0000249A /* Preview Content */,
 			);
 			path = Hondartzak;
+			sourceTree = "<group>";
+		};
+		1A19B0652A10F33C0000249A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1A19B0662A10F33C0000249A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1A19B06F2A10F33D0000249A /* HondartzakTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A19B0702A10F33D0000249A /* HondartzakTests.swift */,
+			);
+			path = HondartzakTests;
+			sourceTree = "<group>";
+		};
+		1A19B0792A10F33D0000249A /* HondartzakUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1A19B07A2A10F33D0000249A /* HondartzakUITests.swift */,
+				1A19B07C2A10F33D0000249A /* HondartzakUITestsLaunchTests.swift */,
+			);
+			path = HondartzakUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		422C002626235AB9008E9A18 /* Hondartzak */ = {
+		1A19B05B2A10F33B0000249A /* Hondartzak */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 422C003B26235ABA008E9A18 /* Build configuration list for PBXNativeTarget "Hondartzak" */;
+			buildConfigurationList = 1A19B0802A10F33D0000249A /* Build configuration list for PBXNativeTarget "Hondartzak" */;
 			buildPhases = (
-				422C002326235AB9008E9A18 /* Sources */,
-				422C002426235AB9008E9A18 /* Frameworks */,
-				422C002526235AB9008E9A18 /* Resources */,
+				1A19B0582A10F33B0000249A /* Sources */,
+				1A19B0592A10F33B0000249A /* Frameworks */,
+				1A19B05A2A10F33B0000249A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,87 +144,164 @@
 			);
 			name = Hondartzak;
 			productName = Hondartzak;
-			productReference = 422C002726235AB9008E9A18 /* Hondartzak.app */;
+			productReference = 1A19B05C2A10F33B0000249A /* Hondartzak.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1A19B06B2A10F33D0000249A /* HondartzakTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A19B0832A10F33D0000249A /* Build configuration list for PBXNativeTarget "HondartzakTests" */;
+			buildPhases = (
+				1A19B0682A10F33D0000249A /* Sources */,
+				1A19B0692A10F33D0000249A /* Frameworks */,
+				1A19B06A2A10F33D0000249A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A19B06E2A10F33D0000249A /* PBXTargetDependency */,
+			);
+			name = HondartzakTests;
+			productName = HondartzakTests;
+			productReference = 1A19B06C2A10F33D0000249A /* HondartzakTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1A19B0752A10F33D0000249A /* HondartzakUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A19B0862A10F33D0000249A /* Build configuration list for PBXNativeTarget "HondartzakUITests" */;
+			buildPhases = (
+				1A19B0722A10F33D0000249A /* Sources */,
+				1A19B0732A10F33D0000249A /* Frameworks */,
+				1A19B0742A10F33D0000249A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A19B0782A10F33D0000249A /* PBXTargetDependency */,
+			);
+			name = HondartzakUITests;
+			productName = HondartzakUITests;
+			productReference = 1A19B0762A10F33D0000249A /* HondartzakUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		422C001F26235AB9008E9A18 /* Project object */ = {
+		1A19B0542A10F33B0000249A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					422C002626235AB9008E9A18 = {
-						CreatedOnToolsVersion = 12.4;
+					1A19B05B2A10F33B0000249A = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					1A19B06B2A10F33D0000249A = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 1A19B05B2A10F33B0000249A;
+					};
+					1A19B0752A10F33D0000249A = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 1A19B05B2A10F33B0000249A;
 					};
 				};
 			};
-			buildConfigurationList = 422C002226235AB9008E9A18 /* Build configuration list for PBXProject "Hondartzak" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = 1A19B0572A10F33B0000249A /* Build configuration list for PBXProject "Hondartzak" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 422C001E26235AB9008E9A18;
-			productRefGroup = 422C002826235AB9008E9A18 /* Products */;
+			mainGroup = 1A19B0532A10F33B0000249A;
+			productRefGroup = 1A19B05D2A10F33B0000249A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				422C002626235AB9008E9A18 /* Hondartzak */,
+				1A19B05B2A10F33B0000249A /* Hondartzak */,
+				1A19B06B2A10F33D0000249A /* HondartzakTests */,
+				1A19B0752A10F33D0000249A /* HondartzakUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		422C002526235AB9008E9A18 /* Resources */ = {
+		1A19B05A2A10F33B0000249A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				422C003726235ABA008E9A18 /* LaunchScreen.storyboard in Resources */,
-				42B71F6826235F54000B985B /* MainViewController.xib in Resources */,
-				422C003426235ABA008E9A18 /* Assets.xcassets in Resources */,
+				1A19B0672A10F33C0000249A /* Preview Assets.xcassets in Resources */,
+				1A19B0642A10F33C0000249A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A19B06A2A10F33D0000249A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A19B0742A10F33D0000249A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		422C002326235AB9008E9A18 /* Sources */ = {
+		1A19B0582A10F33B0000249A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				422C002B26235AB9008E9A18 /* AppDelegate.swift in Sources */,
-				422C002D26235AB9008E9A18 /* SceneDelegate.swift in Sources */,
-				42B71F6726235F54000B985B /* MainViewController.swift in Sources */,
+				1A19B0622A10F33B0000249A /* ContentView.swift in Sources */,
+				1A19B0602A10F33B0000249A /* HondartzakApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A19B0682A10F33D0000249A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A19B0712A10F33D0000249A /* HondartzakTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A19B0722A10F33D0000249A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A19B07D2A10F33D0000249A /* HondartzakUITestsLaunchTests.swift in Sources */,
+				1A19B07B2A10F33D0000249A /* HondartzakUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		422C003526235ABA008E9A18 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				422C003626235ABA008E9A18 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		1A19B06E2A10F33D0000249A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A19B05B2A10F33B0000249A /* Hondartzak */;
+			targetProxy = 1A19B06D2A10F33D0000249A /* PBXContainerItemProxy */;
 		};
-/* End PBXVariantGroup section */
+		1A19B0782A10F33D0000249A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A19B05B2A10F33B0000249A /* Hondartzak */;
+			targetProxy = 1A19B0772A10F33D0000249A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		422C003926235ABA008E9A18 /* Debug */ = {
+		1A19B07E2A10F33D0000249A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -208,7 +345,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -218,14 +355,13 @@
 			};
 			name = Debug;
 		};
-		422C003A26235ABA008E9A18 /* Release */ = {
+		1A19B07F2A10F33D0000249A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -263,7 +399,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -273,68 +409,180 @@
 			};
 			name = Release;
 		};
-		422C003C26235ABA008E9A18 /* Debug */ = {
+		1A19B0812A10F33D0000249A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Hondartzak/Preview Content\"";
 				DEVELOPMENT_TEAM = V9WUS7ZBGW;
-				INFOPLIST_FILE = Hondartzak/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = eus.aitorzubizarreta.Hondartzak;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		422C003D26235ABA008E9A18 /* Release */ = {
+		1A19B0822A10F33D0000249A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Hondartzak/Preview Content\"";
 				DEVELOPMENT_TEAM = V9WUS7ZBGW;
-				INFOPLIST_FILE = Hondartzak/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = eus.aitorzubizarreta.Hondartzak;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1A19B0842A10F33D0000249A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V9WUS7ZBGW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eus.aitorzubizarreta.HondartzakTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hondartzak.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Hondartzak";
+			};
+			name = Debug;
+		};
+		1A19B0852A10F33D0000249A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V9WUS7ZBGW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eus.aitorzubizarreta.HondartzakTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hondartzak.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Hondartzak";
+			};
+			name = Release;
+		};
+		1A19B0872A10F33D0000249A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V9WUS7ZBGW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eus.aitorzubizarreta.HondartzakUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Hondartzak;
+			};
+			name = Debug;
+		};
+		1A19B0882A10F33D0000249A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V9WUS7ZBGW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eus.aitorzubizarreta.HondartzakUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Hondartzak;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		422C002226235AB9008E9A18 /* Build configuration list for PBXProject "Hondartzak" */ = {
+		1A19B0572A10F33B0000249A /* Build configuration list for PBXProject "Hondartzak" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				422C003926235ABA008E9A18 /* Debug */,
-				422C003A26235ABA008E9A18 /* Release */,
+				1A19B07E2A10F33D0000249A /* Debug */,
+				1A19B07F2A10F33D0000249A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		422C003B26235ABA008E9A18 /* Build configuration list for PBXNativeTarget "Hondartzak" */ = {
+		1A19B0802A10F33D0000249A /* Build configuration list for PBXNativeTarget "Hondartzak" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				422C003C26235ABA008E9A18 /* Debug */,
-				422C003D26235ABA008E9A18 /* Release */,
+				1A19B0812A10F33D0000249A /* Debug */,
+				1A19B0822A10F33D0000249A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A19B0832A10F33D0000249A /* Build configuration list for PBXNativeTarget "HondartzakTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A19B0842A10F33D0000249A /* Debug */,
+				1A19B0852A10F33D0000249A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A19B0862A10F33D0000249A /* Build configuration list for PBXNativeTarget "HondartzakUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A19B0872A10F33D0000249A /* Debug */,
+				1A19B0882A10F33D0000249A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 422C001F26235AB9008E9A18 /* Project object */;
+	rootObject = 1A19B0542A10F33B0000249A /* Project object */;
 }
