@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1A19B0602A10F33B0000249A /* HondartzakApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A19B05F2A10F33B0000249A /* HondartzakApp.swift */; };
-		1A19B0622A10F33B0000249A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A19B0612A10F33B0000249A /* ContentView.swift */; };
 		1A19B0642A10F33C0000249A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A19B0632A10F33C0000249A /* Assets.xcassets */; };
 		1A19B0672A10F33C0000249A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A19B0662A10F33C0000249A /* Preview Assets.xcassets */; };
 		1A19B0712A10F33D0000249A /* HondartzakTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A19B0702A10F33D0000249A /* HondartzakTests.swift */; };
 		1A19B07B2A10F33D0000249A /* HondartzakUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A19B07A2A10F33D0000249A /* HondartzakUITests.swift */; };
 		1A19B07D2A10F33D0000249A /* HondartzakUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A19B07C2A10F33D0000249A /* HondartzakUITestsLaunchTests.swift */; };
+		1ACA78042A142BC500D12EA8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACA78032A142BC500D12EA8 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		1A19B05C2A10F33B0000249A /* Hondartzak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hondartzak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A19B05F2A10F33B0000249A /* HondartzakApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HondartzakApp.swift; sourceTree = "<group>"; };
-		1A19B0612A10F33B0000249A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1A19B0632A10F33C0000249A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A19B0662A10F33C0000249A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1A19B06C2A10F33D0000249A /* HondartzakTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HondartzakTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +43,7 @@
 		1A19B0762A10F33D0000249A /* HondartzakUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HondartzakUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A19B07A2A10F33D0000249A /* HondartzakUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HondartzakUITests.swift; sourceTree = "<group>"; };
 		1A19B07C2A10F33D0000249A /* HondartzakUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HondartzakUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1ACA78032A142BC500D12EA8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				1A19B05F2A10F33B0000249A /* HondartzakApp.swift */,
-				1A19B0612A10F33B0000249A /* ContentView.swift */,
+				1ACA78012A142B8F00D12EA8 /* Modules */,
 				1A19B0632A10F33C0000249A /* Assets.xcassets */,
 				1A19B0652A10F33C0000249A /* Preview Content */,
 			);
@@ -125,6 +125,22 @@
 				1A19B07C2A10F33D0000249A /* HondartzakUITestsLaunchTests.swift */,
 			);
 			path = HondartzakUITests;
+			sourceTree = "<group>";
+		};
+		1ACA78012A142B8F00D12EA8 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1ACA78022A142BA800D12EA8 /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		1ACA78022A142BA800D12EA8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1ACA78032A142BC500D12EA8 /* MainView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A19B0622A10F33B0000249A /* ContentView.swift in Sources */,
+				1ACA78042A142BC500D12EA8 /* MainView.swift in Sources */,
 				1A19B0602A10F33B0000249A /* HondartzakApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
