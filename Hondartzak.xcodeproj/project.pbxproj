@@ -13,8 +13,10 @@
 		1A19B0712A10F33D0000249A /* HondartzakTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A19B0702A10F33D0000249A /* HondartzakTests.swift */; };
 		1A19B07B2A10F33D0000249A /* HondartzakUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A19B07A2A10F33D0000249A /* HondartzakUITests.swift */; };
 		1A19B07D2A10F33D0000249A /* HondartzakUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A19B07C2A10F33D0000249A /* HondartzakUITestsLaunchTests.swift */; };
-		1ACA78042A142BC500D12EA8 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACA78032A142BC500D12EA8 /* MainView.swift */; };
-		1ACA78062A1580FC00D12EA8 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACA78052A1580FC00D12EA8 /* MainViewModel.swift */; };
+		1ACA780A2A16B57900D12EA8 /* BeachesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACA78092A16B57900D12EA8 /* BeachesListView.swift */; };
+		1ACA780C2A16B58900D12EA8 /* BeachesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACA780B2A16B58900D12EA8 /* BeachesListViewModel.swift */; };
+		1ACA780E2A16B5F000D12EA8 /* BeachDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACA780D2A16B5F000D12EA8 /* BeachDetailView.swift */; };
+		1ACA78102A16B60200D12EA8 /* BeachDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACA780F2A16B60200D12EA8 /* BeachDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +46,10 @@
 		1A19B0762A10F33D0000249A /* HondartzakUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HondartzakUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A19B07A2A10F33D0000249A /* HondartzakUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HondartzakUITests.swift; sourceTree = "<group>"; };
 		1A19B07C2A10F33D0000249A /* HondartzakUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HondartzakUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		1ACA78032A142BC500D12EA8 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		1ACA78052A1580FC00D12EA8 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		1ACA78092A16B57900D12EA8 /* BeachesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachesListView.swift; sourceTree = "<group>"; };
+		1ACA780B2A16B58900D12EA8 /* BeachesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachesListViewModel.swift; sourceTree = "<group>"; };
+		1ACA780D2A16B5F000D12EA8 /* BeachDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachDetailView.swift; sourceTree = "<group>"; };
+		1ACA780F2A16B60200D12EA8 /* BeachDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,18 +136,28 @@
 		1ACA78012A142B8F00D12EA8 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				1ACA78022A142BA800D12EA8 /* Main */,
+				1ACA78082A16B56300D12EA8 /* BeachesList */,
+				1ACA78072A16B55900D12EA8 /* BeachDetail */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		1ACA78022A142BA800D12EA8 /* Main */ = {
+		1ACA78072A16B55900D12EA8 /* BeachDetail */ = {
 			isa = PBXGroup;
 			children = (
-				1ACA78032A142BC500D12EA8 /* MainView.swift */,
-				1ACA78052A1580FC00D12EA8 /* MainViewModel.swift */,
+				1ACA780D2A16B5F000D12EA8 /* BeachDetailView.swift */,
+				1ACA780F2A16B60200D12EA8 /* BeachDetailViewModel.swift */,
 			);
-			path = Main;
+			path = BeachDetail;
+			sourceTree = "<group>";
+		};
+		1ACA78082A16B56300D12EA8 /* BeachesList */ = {
+			isa = PBXGroup;
+			children = (
+				1ACA78092A16B57900D12EA8 /* BeachesListView.swift */,
+				1ACA780B2A16B58900D12EA8 /* BeachesListViewModel.swift */,
+			);
+			path = BeachesList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,9 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ACA78042A142BC500D12EA8 /* MainView.swift in Sources */,
 				1A19B0602A10F33B0000249A /* HondartzakApp.swift in Sources */,
-				1ACA78062A1580FC00D12EA8 /* MainViewModel.swift in Sources */,
+				1ACA780E2A16B5F000D12EA8 /* BeachDetailView.swift in Sources */,
+				1ACA780C2A16B58900D12EA8 /* BeachesListViewModel.swift in Sources */,
+				1ACA78102A16B60200D12EA8 /* BeachDetailViewModel.swift in Sources */,
+				1ACA780A2A16B57900D12EA8 /* BeachesListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

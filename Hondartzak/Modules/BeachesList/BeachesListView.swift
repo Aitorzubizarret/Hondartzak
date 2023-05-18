@@ -1,31 +1,37 @@
 //
-//  MainView.swift
+//  BeachesListView.swift
 //  Hondartzak
 //
-//  Created by Aitor Zubizarreta on 2023-05-16.
+//  Created by Aitor Zubizarreta on 2023-05-18.
 //
 
 import SwiftUI
 
-struct MainView: View {
-    @StateObject private var viewModel = MainViewModel()
+struct BeachesListView: View {
+    
+    @StateObject private var viewModel = BeachesListViewModel()
     @State var searchText: String = ""
     
     var body: some View {
         NavigationView {
             List {
                 ForEach(viewModel.beaches, id: \.self) { beach in
-                    Text(beach)
+                    NavigationLink {
+                        BeachDetailView()
+                    } label: {
+                        Text(beach)
+                    }
                 }
             }
             .navigationTitle("Hondartzak")
         }
         .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
     }
+    
 }
 
-struct MainView_Previews: PreviewProvider {
+struct BeachesListView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        BeachesListView()
     }
 }
