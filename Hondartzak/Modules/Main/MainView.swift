@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct MainView: View {
+    @StateObject private var viewModel = MainViewModel()
+    @State var searchText: String = ""
+    
     var body: some View {
         NavigationView {
-            Text("Hello")
-                .navigationTitle("Hondartzak")
+            List {
+                ForEach(viewModel.beaches, id: \.self) { beach in
+                    Text(beach)
+                }
+            }
+            .navigationTitle("Hondartzak")
         }
+        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
     }
 }
 
