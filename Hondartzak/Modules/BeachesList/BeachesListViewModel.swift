@@ -8,5 +8,17 @@
 import Foundation
 
 @MainActor class BeachesListViewModel: ObservableObject {
-    @Published var beaches: [String] = ["Hondarribia", "Kontxa", "Ondarreta", "Zurriola", "Donostiako Uhartea", "Antilla", "Oribarzar", "Zarautz", "Malkorbe", "Gaztetape", "Santiago", "Itzurun", "Deba", "Ondarbeltz", "Portu", "Saturraran"]
+    
+    private let beaches: [String] = ["Hondarribia", "Kontxa", "Ondarreta", "Zurriola", "Donostiako Uhartea", "Antilla", "Oribarzar", "Zarautz", "Malkorbe", "Gaztetape", "Santiago", "Itzurun", "Deba", "Ondarbeltz", "Portu", "Saturraran"]
+    
+    @Published var searchText: String = ""
+    
+    var filteredBeaches: [String] {
+        if searchText.isEmpty {
+            return beaches
+        } else {
+            return beaches.filter { $0.contains(searchText) }
+        }
+    }
+    
 }

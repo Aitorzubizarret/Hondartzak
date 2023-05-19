@@ -10,12 +10,11 @@ import SwiftUI
 struct BeachesListView: View {
     
     @StateObject private var viewModel = BeachesListViewModel()
-    @State var searchText: String = ""
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(viewModel.beaches, id: \.self) { beach in
+                ForEach(viewModel.filteredBeaches, id: \.self) { beach in
                     NavigationLink {
                         BeachDetailView()
                     } label: {
@@ -25,7 +24,9 @@ struct BeachesListView: View {
             }
             .navigationTitle("Hondartzak")
         }
-        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
+        .searchable(text: $viewModel.searchText,
+                    placement: .navigationBarDrawer(displayMode: .always),
+                    prompt: "Aurkitu zure hondartza")
     }
     
 }
