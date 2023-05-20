@@ -15,8 +15,8 @@ struct BeachesListView: View {
         NavigationView {
             if viewModel.searchText.isEmpty {
                 List {
-                    ForEach(viewModel.favoriteBeaches, id: \.self) { beach in
-                        BeachesListItemView(beachName: beach)
+                    ForEach(viewModel.favoriteBeaches, id: \.id) { beach in
+                        BeachesListItemView(beach: beach)
                             .listRowSeparator(.hidden)
                             .listRowBackground(Color.clear) // Hides highlight color when tappping an element.
                             .buttonStyle(PlainButtonStyle())
@@ -26,8 +26,8 @@ struct BeachesListView: View {
                 .navigationTitle("Hondartzak")
             } else {
                 List {
-                    ForEach(viewModel.filteredBeaches, id: \.self) { filteredBeach in
-                        Text(filteredBeach)
+                    ForEach(viewModel.filteredBeaches, id: \.id) { filteredBeach in
+                        Text(filteredBeach.name)
                     }
                 }
             }

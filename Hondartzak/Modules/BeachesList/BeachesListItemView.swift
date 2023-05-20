@@ -9,17 +9,17 @@ import SwiftUI
 
 struct BeachesListItemView: View {
     
-    var beachName: String
+    var beach: Beach
     
     var body: some View {
         NavigationLink(destination: BeachDetailView()) {
             HStack(spacing: 0) {
                 VStack(alignment: .leading) {
-                    Text(beachName)
+                    Text(beach.name)
                         .font(Font.system(size: 18, weight: Font.Weight.bold, design: Font.Design.default))
                         .foregroundColor(Color.black)
                         .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 10))
-                    Text("Donostia")
+                    Text(beach.cityName)
                         .font(Font.system(size: 12, weight: Font.Weight.bold, design: Font.Design.default))
                         .foregroundColor(Color.black)
                         .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 10))
@@ -58,7 +58,7 @@ struct BeachesListItemView: View {
 
 struct BeachesListItemView_Previews: PreviewProvider {
     static var previews: some View {
-        BeachesListItemView(beachName: "Kontxa")
+        BeachesListItemView(beach: Beach(name: "Kontxa", cityName: "Donostia"))
             .previewLayout(.sizeThatFits)
     }
 }
