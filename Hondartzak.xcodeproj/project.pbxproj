@@ -17,6 +17,7 @@
 		1ACA780C2A16B58900D12EA8 /* BeachesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACA780B2A16B58900D12EA8 /* BeachesListViewModel.swift */; };
 		1ACA780E2A16B5F000D12EA8 /* BeachDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACA780D2A16B5F000D12EA8 /* BeachDetailView.swift */; };
 		1ACA78102A16B60200D12EA8 /* BeachDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACA780F2A16B60200D12EA8 /* BeachDetailViewModel.swift */; };
+		1ACA78122A17FF3F00D12EA8 /* BeachesListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACA78112A17FF3F00D12EA8 /* BeachesListItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		1ACA780B2A16B58900D12EA8 /* BeachesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachesListViewModel.swift; sourceTree = "<group>"; };
 		1ACA780D2A16B5F000D12EA8 /* BeachDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachDetailView.swift; sourceTree = "<group>"; };
 		1ACA780F2A16B60200D12EA8 /* BeachDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachDetailViewModel.swift; sourceTree = "<group>"; };
+		1ACA78112A17FF3F00D12EA8 /* BeachesListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachesListItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 			children = (
 				1ACA78092A16B57900D12EA8 /* BeachesListView.swift */,
 				1ACA780B2A16B58900D12EA8 /* BeachesListViewModel.swift */,
+				1ACA78112A17FF3F00D12EA8 /* BeachesListItemView.swift */,
 			);
 			path = BeachesList;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				1A19B0602A10F33B0000249A /* HondartzakApp.swift in Sources */,
 				1ACA780E2A16B5F000D12EA8 /* BeachDetailView.swift in Sources */,
 				1ACA780C2A16B58900D12EA8 /* BeachesListViewModel.swift in Sources */,
+				1ACA78122A17FF3F00D12EA8 /* BeachesListItemView.swift in Sources */,
 				1ACA78102A16B60200D12EA8 /* BeachDetailViewModel.swift in Sources */,
 				1ACA780A2A16B57900D12EA8 /* BeachesListView.swift in Sources */,
 			);

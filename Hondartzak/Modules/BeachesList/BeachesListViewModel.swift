@@ -21,4 +21,6 @@ import Foundation
         }
     }
     
+    var favoriteBeaches: [String] = ["Eibar"]
+    
 }

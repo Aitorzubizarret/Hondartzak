@@ -13,16 +13,24 @@ struct BeachesListView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach(viewModel.filteredBeaches, id: \.self) { beach in
-                    NavigationLink {
-                        BeachDetailView()
-                    } label: {
-                        Text(beach)
+            if viewModel.searchText.isEmpty {
+                List {
+                    ForEach(viewModel.favoriteBeaches, id: \.self) { beach in
+                        BeachesListItemView(beachName: beach)
+                            .listRowSeparator(.hidden)
+                            .listRowBackground(Color.clear) // Hides highlight color when tappping an element.
+                            .buttonStyle(PlainButtonStyle())
+                    }
+                }
+                .listStyle(.plain)
+                .navigationTitle("Hondartzak")
+            } else {
+                List {
+                    ForEach(viewModel.filteredBeaches, id: \.self) { filteredBeach in
+                        Text(filteredBeach)
                     }
                 }
             }
-            .navigationTitle("Hondartzak")
         }
         .searchable(text: $viewModel.searchText,
                     placement: .navigationBarDrawer(displayMode: .always),
